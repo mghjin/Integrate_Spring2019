@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerControl : MonoBehaviour {
 
@@ -23,6 +24,7 @@ public class PlayerControl : MonoBehaviour {
     GameObject vfx_charging;
     Rigidbody rb;
     CapsuleCollider coll;
+    HeroStatusPannelControl heroStatusPanelControl;
     #endregion
 
     #region Status
@@ -50,6 +52,7 @@ public class PlayerControl : MonoBehaviour {
         cannonFollowingPosition = GameObject.Find("CannonFollowingPoint");
         firePoint = GameObject.Find("FirePoint");
         vfx_charging = GameObject.Find("VFX_charging");
+        heroStatusPanelControl = GameObject.Find("PlayerStatusPanel").GetComponent<HeroStatusPannelControl>();
 
 
         //initialization
@@ -202,5 +205,21 @@ public class PlayerControl : MonoBehaviour {
                 player.transform.position += Vector3.right * axis_x * moveSpeed_armed * Time.deltaTime;
             }
         }
+    }
+
+    public void GetHit(float damage)  //call this function to deal damage to the hero
+    {
+        currentHP -= damage;
+        heroStatusPanelControl.RefreshHPBarDisplay();
+        if (currentHP <= 0)
+        {
+            Die();
+        }
+    }
+
+    public void Die()
+    {
+        canControl = false;
+        isAlive = false;
     }
 }
