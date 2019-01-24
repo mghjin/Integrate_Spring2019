@@ -25,6 +25,8 @@ public class PlayerControl : MonoBehaviour {
     Rigidbody rb;
     CapsuleCollider coll;
     HeroStatusPannelControl heroStatusPanelControl;
+    public GameObject[] keyPos;
+
     #endregion
 
     #region Status
@@ -41,6 +43,9 @@ public class PlayerControl : MonoBehaviour {
     public bool canSheathe = true;
     public bool canShoot = true;
     public float currentHP = 1f;
+
+    public int maxNumberOfKeysCarried = 3; // DO NOT Change the initial value casually!!!!
+    public int numberOfKeysCarried = 0; // this variable will only be changed by external events.
     #endregion
 
     void Start () {
@@ -96,8 +101,8 @@ public class PlayerControl : MonoBehaviour {
         }
         else
         {
-            cannon.transform.position = new Vector3(Mathf.Lerp(cannon.transform.position.x, cannonFollowingPosition.transform.position.x, 0.03f), 
-                                                       Mathf.Lerp(cannon.transform.position.y, cannonFollowingPosition.transform.position.y, 0.03f), 
+            cannon.transform.position = new Vector3(Mathf.Lerp(cannon.transform.position.x, cannonFollowingPosition.transform.position.x, 0.08f), 
+                                                       Mathf.Lerp(cannon.transform.position.y, cannonFollowingPosition.transform.position.y, 0.08f), 
                                                            cannon.transform.position.z);
         }
     }
@@ -211,15 +216,16 @@ public class PlayerControl : MonoBehaviour {
     {
         currentHP -= damage;
         heroStatusPanelControl.RefreshHPBarDisplay();
-        if (currentHP <= 0)
-        {
-            Die();
-        }
+        DeathCheck();
     }
 
-    public void Die()
+    public void DeathCheck()
     {
-        canControl = false;
-        isAlive = false;
+        if (currentHP <= 0 && isAlive)
+        {
+            canControl = false;
+            isAlive = false;
+        }
+     
     }
 }

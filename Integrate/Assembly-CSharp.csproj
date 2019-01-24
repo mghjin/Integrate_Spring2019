@@ -63,8 +63,11 @@
   <ItemGroup>
     <Compile Include="Assets\2.Script\AmmoControl.cs" />
     <Compile Include="Assets\2.Script\CameraControl.cs" />
+    <Compile Include="Assets\2.Script\EnemyAmmoControl.cs" />
     <Compile Include="Assets\2.Script\EnemyControl.cs" />
+    <Compile Include="Assets\2.Script\GateControl.cs" />
     <Compile Include="Assets\2.Script\HeroStatusPannelControl.cs" />
+    <Compile Include="Assets\2.Script\KeyControl.cs" />
     <Compile Include="Assets\2.Script\PlayerControl.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>D:/4.Project/ProjectIntegrate_Public/Integrate/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>

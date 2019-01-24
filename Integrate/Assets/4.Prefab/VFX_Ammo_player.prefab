@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 54948068770901012}
   - component: {fileID: 114449556565426124}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: VFX_Ammo_player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -132,6 +132,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   VFX_sparkPrefab: {fileID: 1650646488289178, guid: 0ab877d990d01e942b061bbfe319dcb9,
     type: 2}
+  ammoDamage: 100
 --- !u!135 &135233266484201142
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -139,7 +140,7 @@ SphereCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1143838755871362}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
