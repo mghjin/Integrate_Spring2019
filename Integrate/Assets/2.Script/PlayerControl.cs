@@ -26,11 +26,13 @@ public class PlayerControl : MonoBehaviour {
     CapsuleCollider coll;
     HeroStatusPannelControl heroStatusPanelControl;
     public GameObject[] keyPos;
+    Animator animator;
 
     #endregion
 
     #region Status
     public bool isAlive = true;
+    public bool isFacingRight = true;
 
     public bool isSheathed = true; //is sheathed = cannot attack. 
     public bool isCharging = false;
@@ -58,6 +60,7 @@ public class PlayerControl : MonoBehaviour {
         firePoint = GameObject.Find("FirePoint");
         vfx_charging = GameObject.Find("VFX_charging");
         heroStatusPanelControl = GameObject.Find("PlayerStatusPanel").GetComponent<HeroStatusPannelControl>();
+        animator = player.GetComponentInChildren<Animator>();
 
 
         //initialization
@@ -93,7 +96,7 @@ public class PlayerControl : MonoBehaviour {
         if (!isSheathed)
         {
             cannon.transform.position = new Vector3(Mathf.Lerp(cannon.transform.position.x, player.transform.position.x, 0.1f),
-                                           Mathf.Lerp(cannon.transform.position.y, player.transform.position.y, 0.1f),
+                                           Mathf.Lerp(cannon.transform.position.y, player.transform.position.y + 0.2f, 0.1f),
                                                cannon.transform.position.z);
             Quaternion rotation = Quaternion.LookRotation(transform.position - Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector3.forward);
             cannon.transform.rotation = rotation;
@@ -199,6 +202,35 @@ public class PlayerControl : MonoBehaviour {
     private void Move()
     {
         float axis_x = Input.GetAxis("Horizontal");
+        //animator control
+        if (axis_x > 0.1f || axis_x < -0.1f)
+        {
+            animator.SetBool("IsMoving", true);
+        }
+        else
+        {
+            animator.SetBool("IsMoving", false);
+        }
+        //facing control
+        if (axis_x > 0)
+        {
+            if (!isFacingRight)
+            {
+                isFacingRight = true;
+                player.transform.localScale = new Vector3(-player.transform.localScale.x, player.transform.localScale.y, player.transform.localScale.z);
+                cannon.transform.localScale = new Vector3(-cannon.transform.localScale.x, cannon.transform.localScale.y, cannon.transform.localScale.z);
+            }
+        }
+        else if (axis_x < 0)
+        {
+            if (isFacingRight)
+            {
+                isFacingRight = false;
+                player.transform.localScale = new Vector3(-player.transform.localScale.x, player.transform.localScale.y, player.transform.localScale.z);
+                cannon.transform.localScale = new Vector3(-cannon.transform.localScale.x, cannon.transform.localScale.y, cannon.transform.localScale.z);
+            }
+        }
+        //move
         if (canMove)
         {
             if (isSheathed)
