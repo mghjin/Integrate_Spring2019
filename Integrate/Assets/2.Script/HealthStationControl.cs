@@ -29,6 +29,7 @@ public class HealthStationControl : MonoBehaviour {
             triggerTextMesh.color = new Color(255, 255, 255, 0);
             StartCoroutine("DisplayText");
             playerControl.currentHP += healingValue;
+            playerControl.heroStatusPanelControl.RefreshHPBarDisplay();
             if (playerControl.currentHP > playerControl.maxHP)
             {
                 playerControl.currentHP = playerControl.maxHP;

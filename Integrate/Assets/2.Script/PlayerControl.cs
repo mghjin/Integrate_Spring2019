@@ -24,7 +24,7 @@ public class PlayerControl : MonoBehaviour {
     GameObject vfx_charging;
     Rigidbody rb;
     CapsuleCollider coll;
-    HeroStatusPannelControl heroStatusPanelControl;
+    public HeroStatusPannelControl heroStatusPanelControl;
     public GameObject[] keyPos;
     Animator animator;
 

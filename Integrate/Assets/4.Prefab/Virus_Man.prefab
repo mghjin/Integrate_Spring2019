@@ -258,6 +258,7 @@ MonoBehaviour:
   relatives:
   - {fileID: 0}
   - {fileID: 0}
+  vfx_error: {fileID: 1439209226112618}
 --- !u!136 &136510243105210836
 CapsuleCollider:
   m_ObjectHideFlags: 1

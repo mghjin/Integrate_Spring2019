@@ -25,7 +25,7 @@ public class EnemyAmmoControl : MonoBehaviour {
             Destroy(vfx, 2.0f);
             Destroy(this.gameObject);
         }
-        else if (collision.gameObject.layer != 8)
+        else if (collision.gameObject.layer == 9)
         {
             GameObject vfx = Instantiate(VFX_sparkPrefab, transform.position, Quaternion.identity);
             Destroy(vfx, 2.0f);

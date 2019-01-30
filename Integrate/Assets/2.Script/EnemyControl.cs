@@ -38,7 +38,7 @@ public class EnemyControl : MonoBehaviour {
     Rigidbody rb;
     Collider coll;
     PlayerControl playerControl;
-    
+    [SerializeField] GameObject vfx_error;
     #endregion
 
     void Start () {
@@ -208,6 +208,7 @@ public class EnemyControl : MonoBehaviour {
             rb.useGravity = false;
             coll.enabled = false;
             EvokeAggressivenessOfRelatives();
+            vfx_error.SetActive(false);
             if (willDropKey)
             {
                 Instantiate(dropPrefab, transform.position, Quaternion.identity);
@@ -225,6 +226,7 @@ public class EnemyControl : MonoBehaviour {
                 if (relativeControl.isAlive)
                 {
                     relativeControl.isAggressive = true;
+                    relativeControl.vfx_error.SetActive(true);
                 }
             }
         }
