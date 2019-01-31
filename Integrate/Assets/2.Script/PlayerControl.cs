@@ -112,10 +112,14 @@ public class PlayerControl : MonoBehaviour {
 
     private bool Groundcheck()
     {
-
-        if (Physics.Raycast(player.transform.position,Vector3.down,coll.height/2+0.5f))
+        RaycastHit hit;
+        if (Physics.Raycast(player.transform.position,Vector3.down,out hit,coll.height/2+0.5f))
         {
-            return true;
+            if (hit.collider.gameObject.layer == 9)
+            {
+                return (true);
+            }
+            return false;
         }
         else
         {
