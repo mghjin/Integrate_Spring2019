@@ -6,6 +6,9 @@ using UnityEngine.UI;
 
 public class PlayerControl : MonoBehaviour {
 
+    public AudioSource cannon_startup,  //noise that plays upon left mouse click
+        cannon_charge,                  //noise that plays while left mouse click
+        cannon_shoot;                   //noise that plays upon weapon shoot (remove left click)
 
     #region Player Parameters
     public float moveSpeed_nornal = 5.0f;
@@ -160,21 +163,26 @@ public class PlayerControl : MonoBehaviour {
     {
         if (canShoot)
         {
+            //left click while weapon is unsheathed
             if (Input.GetMouseButtonDown(0) && !isSheathed)
             {
                 isCharging = true;
                 if (!vfx_charging.gameObject.activeSelf)
                 {
+                    cannon_startup.Play();
+                    cannon_charge.Play();
                     vfx_charging.SetActive(true);
                 }
 
             }
+            //cancelling left click
             if (Input.GetMouseButtonUp(0) && !isSheathed)
             {
                 isCharging = false;
                 currentCharged = 0f;
                 if (vfx_charging.gameObject.activeSelf)
                 {
+                    cannon_charge.Stop();
                     vfx_charging.SetActive(false);
                 }
             }
@@ -200,6 +208,8 @@ public class PlayerControl : MonoBehaviour {
 
     private void Shoot()
     {
+        cannon_charge.Stop();
+        cannon_shoot.Play();
         Instantiate(ammoPrefab, firePoint.transform.position, cannon.transform.rotation);
     }
 
