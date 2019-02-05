@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+//This manager won't be detroyed after loading
 public class LevelManager : MonoBehaviour
 {
 
@@ -9,6 +11,8 @@ public class LevelManager : MonoBehaviour
     public int numberOfEnemiesBeenEliminated = 0;
     public float eliminatingRate = 0f;
     public EnemyControl[] enemies;
+
+
 
     void Start()
     {

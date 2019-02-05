@@ -40,6 +40,7 @@ public class EnemyControl : MonoBehaviour {
     PlayerControl playerControl;
     [SerializeField] GameObject vfx_error;
     LevelManager levelmanager;
+    Animator animator;
     #endregion
 
     void Start () {
@@ -48,6 +49,8 @@ public class EnemyControl : MonoBehaviour {
         coll = GetComponent<Collider>();
         playerControl = GameObject.Find("Player").GetComponent<PlayerControl>();
         levelmanager = GameObject.Find("LevelManager").GetComponent<LevelManager>();
+        animator = GetComponentInChildren<Animator>();
+
 
         //Initialization
         currentHP = maxHP;
@@ -212,6 +215,7 @@ public class EnemyControl : MonoBehaviour {
             EvokeAggressivenessOfRelatives();
             vfx_error.SetActive(false);
             levelmanager.calculateDeathOfEnemies();
+            animator.SetBool("IsDead", true);
             if (willDropKey)
             {
                 Instantiate(dropPrefab, transform.position, Quaternion.identity);
