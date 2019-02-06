@@ -66,6 +66,7 @@
     <Compile Include="Assets\2.Script\DangerousArea.cs" />
     <Compile Include="Assets\2.Script\EnemyAmmoControl.cs" />
     <Compile Include="Assets\2.Script\EnemyControl.cs" />
+    <Compile Include="Assets\2.Script\ExitControl.cs" />
     <Compile Include="Assets\2.Script\GateControl.cs" />
     <Compile Include="Assets\2.Script\HealthStationControl.cs" />
     <Compile Include="Assets\2.Script\HeroStatusPannelControl.cs" />

@@ -36,6 +36,7 @@ public class PlayerControl : MonoBehaviour {
     #region Status
     public bool isAlive = true;
     public bool isFacingRight = true;
+    public bool isInvincible = false;
 
     public bool isSheathed = true; //is sheathed = cannot attack. 
     public bool isCharging = false;
@@ -260,9 +261,12 @@ public class PlayerControl : MonoBehaviour {
 
     public void GetHit(float damage)  //call this function to deal damage to the hero
     {
-        currentHP -= damage;
-        heroStatusPanelControl.RefreshHPBarDisplay();
-        DeathCheck();
+        if (!isInvincible)
+        {
+            currentHP -= damage;
+            heroStatusPanelControl.RefreshHPBarDisplay();
+            DeathCheck();
+        }
     }
 
     public void DeathCheck()

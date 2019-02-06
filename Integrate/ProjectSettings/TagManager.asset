@@ -8,6 +8,7 @@ TagManager:
   - Key
   - player
   - Enemy
+  - LevelManager
   layers:
   - Default
   - TransparentFX
