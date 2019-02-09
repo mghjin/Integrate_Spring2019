@@ -8,7 +8,10 @@ public class PlayerControl : MonoBehaviour {
 
     public AudioSource cannon_startup,  //noise that plays upon left mouse click
         cannon_charge,                  //noise that plays while left mouse click
-        cannon_shoot;                   //noise that plays upon weapon shoot (remove left click)
+        cannon_shoot,                   //noise that plays upon weapon shoot (remove left click)
+        health_station,                 //noise that plays upon picking up health
+        gate_open,                      //noise that plays upon opening the gate
+        jump_sfx;                       //noise that plays upon player jumping (pressing space)
 
     #region Player Parameters
     public float moveSpeed_nornal = 5.0f;
@@ -138,6 +141,7 @@ public class PlayerControl : MonoBehaviour {
             if (Groundcheck() && canMove)
             {
                 rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+                jump_sfx.Play();
             }
 
         }
