@@ -35,9 +35,6 @@ public class HealthStationControl : MonoBehaviour {
         if (other.gameObject.tag == "player" && !isTriggered)
         {
             isTriggered = true;
-            triggerText.SetActive(true);
-            triggerTextMesh.color = new Color(255, 255, 255, 0);
-            StartCoroutine("DisplayText");
             playerControl.currentHP += healingValue;
             if (playerControl.currentHP > playerControl.maxHP)
             {
@@ -49,6 +46,9 @@ public class HealthStationControl : MonoBehaviour {
             Destroy(temp_vfx, 2.0f);
             VFX_healthStation.SetActive(false);
         }
+        triggerText.SetActive(true);
+        triggerTextMesh.color = new Color(255, 255, 255, 0);
+        StartCoroutine("DisplayText");
     }
 
     IEnumerator DisplayText()

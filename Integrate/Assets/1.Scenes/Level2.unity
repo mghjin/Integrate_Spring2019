@@ -1612,11 +1612,37 @@ PrefabInstance:
         just tech. \nPeople are going crazy over nothing.'\nNo one left to laugh,
         now.\r\n"
       objectReference: {fileID: 0}
+    - target: {fileID: 102647567968289024, guid: 159fecfc77953cd49a2de46559e27fe6,
+        type: 3}
+      propertyPath: m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: bb2dffc07ad704a28aa9186221cc902e,
+        type: 2}
+    - target: {fileID: 102647567968289024, guid: 159fecfc77953cd49a2de46559e27fe6,
+        type: 3}
+      propertyPath: m_TabSize
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 102647567968289024, guid: 159fecfc77953cd49a2de46559e27fe6,
+        type: 3}
+      propertyPath: m_FontSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 102647567968289024, guid: 159fecfc77953cd49a2de46559e27fe6,
+        type: 3}
+      propertyPath: m_CharacterSize
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 114572193982068512, guid: 159fecfc77953cd49a2de46559e27fe6,
         type: 3}
       propertyPath: healthpack_sfx
       value: 
       objectReference: {fileID: 44729239}
+    - target: {fileID: 23326773982995666, guid: 159fecfc77953cd49a2de46559e27fe6,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 944e0f2f3fa144416ac5be1a8e188dbc, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 159fecfc77953cd49a2de46559e27fe6, type: 3}
 --- !u!4 &236629289 stripped
