@@ -21,6 +21,7 @@ public class LevelManager : MonoBehaviour
 
     public int numberOfEnemiesInThisScene = 0;
     public int numberOfEnemiesBeenEliminated = 0;
+    public int rebelliousLevel = 0; // this parameter indicates the times player goes against the order. It won't be initialized on loading.
     public float eliminatingRate = 0f;
     public EnemyControl[] enemies;
     [SerializeField] int currentSceneBuildIndex;
@@ -66,6 +67,10 @@ public class LevelManager : MonoBehaviour
 
     public void LoadNextScene()
     {
+        if (eliminatingRate < 100)
+        {
+            rebelliousLevel++;
+        }
         SceneManager.LoadScene(currentSceneBuildIndex + 1);
     }
 

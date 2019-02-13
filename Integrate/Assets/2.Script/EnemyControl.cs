@@ -38,7 +38,7 @@ public class EnemyControl : MonoBehaviour {
     [SerializeField] bool canAttack = true;
     [SerializeField] float currentAttackCoolDown = 0f;
 
-    [SerializeField] float currentHP = 1f;
+    public float currentHP = 1f;
     #endregion
 
     #region Reference

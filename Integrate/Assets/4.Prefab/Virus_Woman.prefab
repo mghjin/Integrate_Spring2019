@@ -72,7 +72,7 @@ MonoBehaviour:
   ammoPrefab: {fileID: 1255378774126494, guid: 9fd2dfe9c2290884e98054e73b466154, type: 3}
   firePos: {fileID: 1640653022104622}
   dropPrefab: {fileID: 1135644563909246, guid: 26a69e65976353c40a0da6eaad56521f, type: 3}
-  willDropKey: 1
+  willDropKey: 0
   isFacingRight: 1
   isAlive: 1
   canMove: 1
@@ -4872,7 +4872,7 @@ Animator:
   m_GameObject: {fileID: 1702842375586946}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 8e6d0414656cfe8419439ea526f23f2f, type: 2}
+  m_Controller: {fileID: 9100000, guid: 2e31952a8dcbd9b4089be413ebb051f3, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
