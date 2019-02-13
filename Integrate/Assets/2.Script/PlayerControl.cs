@@ -15,7 +15,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerControl : MonoBehaviour {
+public class PlayerControl : MonoBehaviour
+{
 
 
     // SFX collection that is emitted from player object
@@ -75,7 +76,8 @@ public class PlayerControl : MonoBehaviour {
     public EnemyControl automaticallyShootTargetEnemyControl;
     #endregion
 
-    void Start () {
+    void Start()
+    {
         //find references
         rb = GetComponent<Rigidbody>();
         coll = GetComponent<CapsuleCollider>();
@@ -90,7 +92,7 @@ public class PlayerControl : MonoBehaviour {
 
         //initialization
         currentHP = maxHP;
-        vfx_charging.SetActive(false);        
+        vfx_charging.SetActive(false);
 
         levelManager = FindObjectOfType<LevelManager>();
 
@@ -104,9 +106,9 @@ public class PlayerControl : MonoBehaviour {
             StartCoroutine("ChaosMechanicCoolDown");
         }
 
-	}
-	
-	void Update ()
+    }
+
+    void Update()
     {
         //check status
         //player control
@@ -136,187 +138,6 @@ public class PlayerControl : MonoBehaviour {
         AutomaticallyAim();
 
         if (!isSheathed)
-            {
-            isCharging = true;
-                if (!vfx_charging.gameObject.activeSelf)
-                    {
-                        cannon_startup.Play();
-                        cannon_charge.Play();
-                        vfx_charging.SetActive(true);
-                    }
-            }
-        if (isCharging)
-        {
-            currentCharged += chargingSpeed * Time.deltaTime;
-        }
-        if (currentCharged >= 100f)
-        {
-            currentCharged = 0;
-            isCharging = false;
-            if (vfx_charging.gameObject.activeSelf)
-                {
-                    vfx_charging.SetActive(false);
-                }
-            Shoot();
-        }
-    }
-
-    private void AutomaticallyAim()
-    {
-        if (automaticallyShootTarget != null)
-            {
-                if (automaticallyShootTargetEnemyControl.currentHP <= 0.1f)
-                {
-                    automaticallyShootTargetEnemyControl = null;
-                    automaticallyShootTarget = null;
-        }
-
-        if ((automaticallyShootTarget.transform.position - transform.position).magnitude >= 7.0f)
-        {
-            automaticallyShootTargetEnemyControl = null;
-            automaticallyShootTarget = null;
-        }
-    }
-
-    if (automaticallyShootTarget == null)
-    {
-        float distance = 10000f;
-        GameObject[] objs;
-        objs = GameObject.FindGameObjectsWithTag("Enemy");
-        foreach (GameObject obj in objs)
-        {
-            automaticallyShootTargetEnemyControl = obj.GetComponent<EnemyControl>();
-            if (automaticallyShootTargetEnemyControl.currentHP >= 0.1f)
-            {
-                float dist = (obj.transform.position - transform.position).magnitude;
-                if (dist <= distance)
-                {
-                    distance = dist;
-                    automaticallyShootTarget = obj;
-                }
-            }
-        }
-        automaticallyShootTargetEnemyControl = automaticallyShootTarget.GetComponent<EnemyControl>();
-    }
-
-    if (!isSheathed)
-    {
-        cannon.transform.position = new Vector3(Mathf.Lerp(cannon.transform.position.x, player.transform.position.x, 0.1f),
-                                       Mathf.Lerp(cannon.transform.position.y, player.transform.position.y + 0.2f, 0.1f),
-                                           cannon.transform.position.z);
-
-        Quaternion rotation = Quaternion.LookRotation(transform.position - automaticallyShootTarget.transform.position + Vector3.forward * (10f), Vector3.forward);
-        Debug.Log(Camera.main.ScreenToWorldPoint(Input.mousePosition));
-        Debug.Log(automaticallyShootTarget.transform.position + Vector3.forward * (-10f));
-        cannon.transform.rotation = rotation;
-        cannon.transform.eulerAngles = new Vector3(0, 0, cannon.transform.eulerAngles.z);
-
-    }
-
-}
-
-
-IEnumerator ChaosMechanicCoolDown()
-{
-    isChaos = false;
-    canControl = true;
-    isCharging = false;
-    currentCharged = 0f;
-    if (vfx_charging.gameObject.activeSelf)
-    {
-        cannon_charge.Stop();
-        vfx_charging.SetActive(false);
-    }
-    float coolDownTime;
-    //coolDownTime = 60 - 10 * UnityEngine.Random.Range(1,levelManager.rebelliousLevel);
-    coolDownTime = 5f;
-    yield return new WaitForSeconds(coolDownTime);
-    isChaos = true;
-    canControl = false;
-    coolDownTime = 4 + levelManager.rebelliousLevel * 1.5f;
-    yield return new WaitForSeconds(coolDownTime);
-    StartCoroutine("ChaosMechanicCoolDown");
-
-
-}
-
-private void Aim()
-{
-    //player can aim the direction of the cannon IFF the cannon is unsheathed
-    if (!isSheathed)
-    {
-        cannon.transform.position = new Vector3(Mathf.Lerp(cannon.transform.position.x, player.transform.position.x, 0.1f),
-                                       Mathf.Lerp(cannon.transform.position.y, player.transform.position.y + 0.2f, 0.1f),
-                                           cannon.transform.position.z);
-        Quaternion rotation = Quaternion.LookRotation(transform.position - Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector3.forward);
-        cannon.transform.rotation = rotation;
-        cannon.transform.eulerAngles = new Vector3(0, 0, cannon.transform.eulerAngles.z);
-    }
-    else
-    // if weapon is sheathed, its sprite will follow the player object
-    {
-        cannon.transform.position = new Vector3(Mathf.Lerp(cannon.transform.position.x, cannonFollowingPosition.transform.position.x, 0.08f),
-                                                   Mathf.Lerp(cannon.transform.position.y, cannonFollowingPosition.transform.position.y, 0.08f),
-                                                       cannon.transform.position.z);
-    }
-}
-
-private bool Groundcheck()
-{
-    RaycastHit hit;
-    if (Physics.Raycast(player.transform.position + Vector3.right * 0.26f, Vector3.down, out hit, coll.height / 2 + 0.5f) || Physics.Raycast(player.transform.position + Vector3.left * 0.26f, Vector3.down, out hit, coll.height / 2 + 0.5f))
-    {
-        //checks whether the player is on a solid platform
-        if (hit.collider.gameObject.layer == 9)
-        {
-            return (true);
-        }
-        return false;
-    }
-    else
-    //if player is "floating"/not on a solid platform, return false
-    {
-        return false;
-    }
-}
-
-private void Jump()
-{
-    // checks if the player presses the space key
-    if (Input.GetKeyDown(KeyCode.Space))
-    {
-        //if spacedown == true and the player is not in the air, JUMP
-        if (Groundcheck() && canMove)
-        {
-            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-            jump_sfx.Play();
-        }
-    }
-}
-
-private void Sheathe()
-{
-    // if the weapon is out, the player can sheathe weapon
-    if (canSheathe && Input.GetKeyDown(KeyCode.Q))
-    {
-        if (isSheathed)
-        {
-            isSheathed = false; //take out weapon
-        }
-        else
-        {
-            isSheathed = true; //take back weapon
-            cannon.transform.rotation = Quaternion.identity;
-        }
-    }
-}
-
-private void ChargeWeapon()
-{
-    if (canShoot)
-    {
-        //left click while weapon is unsheathed
-        if (Input.GetMouseButtonDown(0) && !isSheathed)
         {
             isCharging = true;
             if (!vfx_charging.gameObject.activeSelf)
@@ -326,26 +147,12 @@ private void ChargeWeapon()
                 vfx_charging.SetActive(true);
             }
         }
-        //cancelling left click
-        if (Input.GetMouseButtonUp(0) && !isSheathed)
-        {
-            isCharging = false;
-            currentCharged = 0f;
-            if (vfx_charging.gameObject.activeSelf)
-            {
-                cannon_charge.Stop();
-                vfx_charging.SetActive(false);
-            }
-        }
         if (isCharging)
-        //charges weapon for a duration; can be cancelled with left click
         {
             currentCharged += chargingSpeed * Time.deltaTime;
         }
-
         if (currentCharged >= 100f)
         {
-            //once fully charged, call the shoot function
             currentCharged = 0;
             isCharging = false;
             if (vfx_charging.gameObject.activeSelf)
@@ -355,82 +162,278 @@ private void ChargeWeapon()
             Shoot();
         }
     }
-}
 
-private void Shoot()
-{
-    //plays shooting sfx and fires the bullet in direction the player is aiming
-    cannon_charge.Stop();
-    cannon_shoot.Play();
-    Instantiate(ammoPrefab, firePoint.transform.position, cannon.transform.rotation);
-}
-
-private void Move()
-{
-    float axis_x = Input.GetAxis("Horizontal");
-    //animator control
-    if (axis_x > 0.1f || axis_x < -0.1f)
+    private void AutomaticallyAim()
     {
-        animator.SetBool("IsMoving", true);
-    }
-    else
-    {
-        animator.SetBool("IsMoving", false);
-    }
-    //facing control
-    if (axis_x > 0)
-    {
-        //turning the character and weapon sprites left and right according to player input
-        if (!isFacingRight)
+        if (automaticallyShootTarget != null)
         {
-            isFacingRight = true;
-            player.transform.localScale = new Vector3(-player.transform.localScale.x, player.transform.localScale.y, player.transform.localScale.z);
-            cannon.transform.localScale = new Vector3(-cannon.transform.localScale.x, cannon.transform.localScale.y, cannon.transform.localScale.z);
+            if (automaticallyShootTargetEnemyControl.currentHP <= 0.1f)
+            {
+                automaticallyShootTargetEnemyControl = null;
+                automaticallyShootTarget = null;
+            }
+
+            if ((automaticallyShootTarget.transform.position - transform.position).magnitude >= 7.0f)
+            {
+                automaticallyShootTargetEnemyControl = null;
+                automaticallyShootTarget = null;
+            }
+        }
+
+        if (automaticallyShootTarget == null)
+        {
+            float distance = 10000f;
+            GameObject[] objs;
+            objs = GameObject.FindGameObjectsWithTag("Enemy");
+            foreach (GameObject obj in objs)
+            {
+                automaticallyShootTargetEnemyControl = obj.GetComponent<EnemyControl>();
+                if (automaticallyShootTargetEnemyControl.currentHP >= 0.1f)
+                {
+                    float dist = (obj.transform.position - transform.position).magnitude;
+                    if (dist <= distance)
+                    {
+                        distance = dist;
+                        automaticallyShootTarget = obj;
+                    }
+                }
+            }
+            automaticallyShootTargetEnemyControl = automaticallyShootTarget.GetComponent<EnemyControl>();
+        }
+
+        if (!isSheathed)
+        {
+            cannon.transform.position = new Vector3(Mathf.Lerp(cannon.transform.position.x, player.transform.position.x, 0.1f),
+                                           Mathf.Lerp(cannon.transform.position.y, player.transform.position.y + 0.2f, 0.1f),
+                                               cannon.transform.position.z);
+
+            Quaternion rotation = Quaternion.LookRotation(transform.position - automaticallyShootTarget.transform.position + Vector3.forward * (10f), Vector3.forward);
+            Debug.Log(Camera.main.ScreenToWorldPoint(Input.mousePosition));
+            Debug.Log(automaticallyShootTarget.transform.position + Vector3.forward * (-10f));
+            cannon.transform.rotation = rotation;
+            cannon.transform.eulerAngles = new Vector3(0, 0, cannon.transform.eulerAngles.z);
+
+        }
+
+    }
+
+
+    IEnumerator ChaosMechanicCoolDown()
+    {
+        isChaos = false;
+        canControl = true;
+        isCharging = false;
+        currentCharged = 0f;
+        if (vfx_charging.gameObject.activeSelf)
+        {
+            cannon_charge.Stop();
+            vfx_charging.SetActive(false);
+        }
+        float coolDownTime;
+        //coolDownTime = 60 - 10 * UnityEngine.Random.Range(1,levelManager.rebelliousLevel);
+        coolDownTime = 5f;
+        yield return new WaitForSeconds(coolDownTime);
+        isChaos = true;
+        canControl = false;
+        coolDownTime = 4 + levelManager.rebelliousLevel * 1.5f;
+        yield return new WaitForSeconds(coolDownTime);
+        StartCoroutine("ChaosMechanicCoolDown");
+
+
+    }
+
+    private void Aim()
+    {
+        //player can aim the direction of the cannon IFF the cannon is unsheathed
+        if (!isSheathed)
+        {
+            cannon.transform.position = new Vector3(Mathf.Lerp(cannon.transform.position.x, player.transform.position.x, 0.1f),
+                                           Mathf.Lerp(cannon.transform.position.y, player.transform.position.y + 0.2f, 0.1f),
+                                               cannon.transform.position.z);
+            Quaternion rotation = Quaternion.LookRotation(transform.position - Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector3.forward);
+            cannon.transform.rotation = rotation;
+            cannon.transform.eulerAngles = new Vector3(0, 0, cannon.transform.eulerAngles.z);
+        }
+        else
+        // if weapon is sheathed, its sprite will follow the player object
+        {
+            cannon.transform.position = new Vector3(Mathf.Lerp(cannon.transform.position.x, cannonFollowingPosition.transform.position.x, 0.08f),
+                                                       Mathf.Lerp(cannon.transform.position.y, cannonFollowingPosition.transform.position.y, 0.08f),
+                                                           cannon.transform.position.z);
         }
     }
-    else if (axis_x < 0)
+
+    private bool Groundcheck()
     {
-        if (isFacingRight)
+        RaycastHit hit;
+        if (Physics.Raycast(player.transform.position + Vector3.right * 0.26f, Vector3.down, out hit, coll.height / 2 + 0.5f) || Physics.Raycast(player.transform.position + Vector3.left * 0.26f, Vector3.down, out hit, coll.height / 2 + 0.5f))
         {
-            isFacingRight = false;
-            player.transform.localScale = new Vector3(-player.transform.localScale.x, player.transform.localScale.y, player.transform.localScale.z);
-            cannon.transform.localScale = new Vector3(-cannon.transform.localScale.x, cannon.transform.localScale.y, cannon.transform.localScale.z);
+            //checks whether the player is on a solid platform
+            if (hit.collider.gameObject.layer == 9)
+            {
+                return (true);
+            }
+            return false;
+        }
+        else
+        //if player is "floating"/not on a solid platform, return false
+        {
+            return false;
         }
     }
-    //move
-    if (canMove)
+
+    private void Jump()
     {
-        if (isSheathed)
+        // checks if the player presses the space key
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            //if weapon is sheathed, player moves at "normal" speed which is faster
-            player.transform.position += Vector3.right * axis_x * moveSpeed_nornal * Time.deltaTime;
+            //if spacedown == true and the player is not in the air, JUMP
+            if (Groundcheck() && canMove)
+            {
+                rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+                jump_sfx.Play();
+            }
+        }
+    }
+
+    private void Sheathe()
+    {
+        // if the weapon is out, the player can sheathe weapon
+        if (canSheathe && Input.GetKeyDown(KeyCode.Q))
+        {
+            if (isSheathed)
+            {
+                isSheathed = false; //take out weapon
+            }
+            else
+            {
+                isSheathed = true; //take back weapon
+                cannon.transform.rotation = Quaternion.identity;
+            }
+        }
+    }
+
+    private void ChargeWeapon()
+    {
+        if (canShoot)
+        {
+            //left click while weapon is unsheathed
+            if (Input.GetMouseButtonDown(0) && !isSheathed)
+            {
+                isCharging = true;
+                if (!vfx_charging.gameObject.activeSelf)
+                {
+                    cannon_startup.Play();
+                    cannon_charge.Play();
+                    vfx_charging.SetActive(true);
+                }
+            }
+            //cancelling left click
+            if (Input.GetMouseButtonUp(0) && !isSheathed)
+            {
+                isCharging = false;
+                currentCharged = 0f;
+                if (vfx_charging.gameObject.activeSelf)
+                {
+                    cannon_charge.Stop();
+                    vfx_charging.SetActive(false);
+                }
+            }
+            if (isCharging)
+            //charges weapon for a duration; can be cancelled with left click
+            {
+                currentCharged += chargingSpeed * Time.deltaTime;
+            }
+
+            if (currentCharged >= 100f)
+            {
+                //once fully charged, call the shoot function
+                currentCharged = 0;
+                isCharging = false;
+                if (vfx_charging.gameObject.activeSelf)
+                {
+                    vfx_charging.SetActive(false);
+                }
+                Shoot();
+            }
+        }
+    }
+
+    private void Shoot()
+    {
+        //plays shooting sfx and fires the bullet in direction the player is aiming
+        cannon_charge.Stop();
+        cannon_shoot.Play();
+        Instantiate(ammoPrefab, firePoint.transform.position, cannon.transform.rotation);
+    }
+
+    private void Move()
+    {
+        float axis_x = Input.GetAxis("Horizontal");
+        //animator control
+        if (axis_x > 0.1f || axis_x < -0.1f)
+        {
+            animator.SetBool("IsMoving", true);
         }
         else
         {
-            //if weapon is unsheathed, player moves at "armed" speed which is slower
-            player.transform.position += Vector3.right * axis_x * moveSpeed_armed * Time.deltaTime;
+            animator.SetBool("IsMoving", false);
+        }
+        //facing control
+        if (axis_x > 0)
+        {
+            //turning the character and weapon sprites left and right according to player input
+            if (!isFacingRight)
+            {
+                isFacingRight = true;
+                player.transform.localScale = new Vector3(-player.transform.localScale.x, player.transform.localScale.y, player.transform.localScale.z);
+                cannon.transform.localScale = new Vector3(-cannon.transform.localScale.x, cannon.transform.localScale.y, cannon.transform.localScale.z);
+            }
+        }
+        else if (axis_x < 0)
+        {
+            if (isFacingRight)
+            {
+                isFacingRight = false;
+                player.transform.localScale = new Vector3(-player.transform.localScale.x, player.transform.localScale.y, player.transform.localScale.z);
+                cannon.transform.localScale = new Vector3(-cannon.transform.localScale.x, cannon.transform.localScale.y, cannon.transform.localScale.z);
+            }
+        }
+        //move
+        if (canMove)
+        {
+            if (isSheathed)
+            {
+                //if weapon is sheathed, player moves at "normal" speed which is faster
+                player.transform.position += Vector3.right * axis_x * moveSpeed_nornal * Time.deltaTime;
+            }
+            else
+            {
+                //if weapon is unsheathed, player moves at "armed" speed which is slower
+                player.transform.position += Vector3.right * axis_x * moveSpeed_armed * Time.deltaTime;
+            }
         }
     }
-}
 
-public void GetHit(float damage)  //call this function to deal damage to the hero
-{
-    if (!isInvincible)
+    public void GetHit(float damage)  //call this function to deal damage to the hero
     {
-        currentHP -= damage;
-        heroStatusPanelControl.RefreshHPBarDisplay();
-        DeathCheck();
+        if (!isInvincible)
+        {
+            currentHP -= damage;
+            heroStatusPanelControl.RefreshHPBarDisplay();
+            DeathCheck();
+        }
     }
-}
 
-public void DeathCheck()
-{
-    if (currentHP <= 0 && isAlive)
+    public void DeathCheck()
     {
-        //once health parameter reaches zero, player character dies
-        //and cannot be controlled
-        canControl = false;
-        isAlive = false;
+        if (currentHP <= 0 && isAlive)
+        {
+            //once health parameter reaches zero, player character dies
+            //and cannot be controlled
+            canControl = false;
+            isAlive = false;
+        }
     }
 }
 
