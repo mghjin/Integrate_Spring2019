@@ -18,7 +18,6 @@ using UnityEngine.UI;
 public class PlayerControl : MonoBehaviour
 {
 
-
     // SFX collection that is emitted from player object
     public AudioSource cannon_startup,  //noise that plays upon left mouse click
         cannon_charge,                  //noise that plays while left mouse click
@@ -164,6 +163,8 @@ public class PlayerControl : MonoBehaviour
     }
 
     private void AutomaticallyAim()
+    // activates during chaos mode, where player cannot control
+    // aims for the nearest virus object and charge/shoots
     {
         if (automaticallyShootTarget != null)
         {
@@ -173,11 +174,16 @@ public class PlayerControl : MonoBehaviour
                 automaticallyShootTarget = null;
             }
 
-            if ((automaticallyShootTarget.transform.position - transform.position).magnitude >= 7.0f)
+            // make sure to set reference for null and !null
+            if (automaticallyShootTarget != null)
             {
-                automaticallyShootTargetEnemyControl = null;
-                automaticallyShootTarget = null;
+                if ((automaticallyShootTarget.transform.position - transform.position).magnitude >= 7.0f)
+                {
+                    automaticallyShootTargetEnemyControl = null;
+                    automaticallyShootTarget = null;
+                }
             }
+
         }
 
         if (automaticallyShootTarget == null)

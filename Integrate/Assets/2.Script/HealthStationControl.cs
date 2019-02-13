@@ -12,6 +12,8 @@ using UnityEngine;
 
 public class HealthStationControl : MonoBehaviour {
 
+    public AudioSource healthpack_sfx; //sfx that plays upn player collision with health pack
+
     [SerializeField] GameObject triggerText;
     [SerializeField] TextMesh triggerTextMesh;
     [SerializeField] GameObject VFX_healthStation;
@@ -41,6 +43,7 @@ public class HealthStationControl : MonoBehaviour {
             {
                 playerControl.currentHP = playerControl.maxHP;
             }
+            healthpack_sfx.Play();
             playerControl.heroStatusPanelControl.RefreshHPBarDisplay();
             GameObject temp_vfx = Instantiate(VFX_HealingPrefab, transform.position, Quaternion.identity);
             Destroy(temp_vfx, 2.0f);

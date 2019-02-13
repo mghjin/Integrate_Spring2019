@@ -30,6 +30,7 @@ public class GateControl : MonoBehaviour {
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Key" && numberOfKeysCaptured < numberOfKeysRequired)
+        //sets the gathered keys into the gate
         {
             KeyControl keyControl = other.GetComponent<KeyControl>();
             keyControl.isInsertedToGate = true;
