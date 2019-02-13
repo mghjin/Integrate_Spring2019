@@ -1,4 +1,15 @@
-﻿using System;
+﻿/* 
+ * GSND 6320 PSYCHOLOGY OF PLAY
+ * PROJECT 1 DIGITAL PROTOTYPE
+ * CODERS:
+ * SIDAN FAN
+ * JIN H KIM
+ * 
+ * EDITORS:
+ * SONYA I MCCREE
+ */
+
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,11 +17,11 @@ using UnityEngine.UI;
 
 public class PlayerControl : MonoBehaviour {
 
+    // SFX collection that is emitted from player object
     public AudioSource cannon_startup,  //noise that plays upon left mouse click
         cannon_charge,                  //noise that plays while left mouse click
         cannon_shoot,                   //noise that plays upon weapon shoot (remove left click)
         health_station,                 //noise that plays upon picking up health
-        gate_open,                      //noise that plays upon opening the gate
         jump_sfx;                       //noise that plays upon player jumping (pressing space)
 
     #region Player Parameters
@@ -21,7 +32,6 @@ public class PlayerControl : MonoBehaviour {
 
     public GameObject ammoPrefab;
     #endregion
-
     #region References
     GameObject player;
     GameObject cannon;
@@ -35,7 +45,6 @@ public class PlayerControl : MonoBehaviour {
     Animator animator;
 
     #endregion
-
     #region Status
     public bool isAlive = true;
     public bool isFacingRight = true;
@@ -69,37 +78,27 @@ public class PlayerControl : MonoBehaviour {
         heroStatusPanelControl = GameObject.Find("PlayerStatusPanel").GetComponent<HeroStatusPannelControl>();
         animator = player.GetComponentInChildren<Animator>();
 
-
         //initialization
         currentHP = maxHP;
-        vfx_charging.SetActive(false);
-        
+        vfx_charging.SetActive(false);        
 	}
 	
-
 	void Update () {
-
         //check status
-
-
         //player control
         if (canControl)
-        {
-        
+        {      
             Move();
             Aim(); // this deal with the action of cannon
             ChargeWeapon();
             Sheathe();
             Jump();
-
-
         }
-
-
     }
 
     private void Aim()
     {
+        //player can aim the direction of the cannon IFF the cannon is unsheathed
         if (!isSheathed)
         {
             cannon.transform.position = new Vector3(Mathf.Lerp(cannon.transform.position.x, player.transform.position.x, 0.1f),
@@ -110,6 +109,7 @@ public class PlayerControl : MonoBehaviour {
             cannon.transform.eulerAngles = new Vector3(0, 0, cannon.transform.eulerAngles.z);
         }
         else
+        // if weapon is sheathed, its sprite will follow the player object
         {
             cannon.transform.position = new Vector3(Mathf.Lerp(cannon.transform.position.x, cannonFollowingPosition.transform.position.x, 0.08f), 
                                                        Mathf.Lerp(cannon.transform.position.y, cannonFollowingPosition.transform.position.y, 0.08f), 
@@ -122,6 +122,7 @@ public class PlayerControl : MonoBehaviour {
         RaycastHit hit;
         if (Physics.Raycast(player.transform.position,Vector3.down,out hit,coll.height/2+0.5f))
         {
+            //checks whether the player is on a solid platform
             if (hit.collider.gameObject.layer == 9)
             {
                 return (true);
@@ -129,6 +130,7 @@ public class PlayerControl : MonoBehaviour {
             return false;
         }
         else
+            //if player is "floating"/not on a solid platform, return false
         {
             return false;
         }
@@ -136,20 +138,21 @@ public class PlayerControl : MonoBehaviour {
 
     private void Jump()
     {
+        // checks if the player presses the space key
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            //if spacedown == true and the player is not in the air, JUMP
             if (Groundcheck() && canMove)
             {
                 rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
                 jump_sfx.Play();
             }
-
         }
-
     }
 
     private void Sheathe()
     {
+        // if the weapon is out, the player can sheathe weapon
         if (canSheathe && Input.GetKeyDown(KeyCode.Q))
         {
             if (isSheathed)
@@ -178,7 +181,6 @@ public class PlayerControl : MonoBehaviour {
                     cannon_charge.Play();
                     vfx_charging.SetActive(true);
                 }
-
             }
             //cancelling left click
             if (Input.GetMouseButtonUp(0) && !isSheathed)
@@ -192,12 +194,14 @@ public class PlayerControl : MonoBehaviour {
                 }
             }
             if (isCharging)
+            //charges weapon for a duration; can be cancelled with left click
             {
                 currentCharged += chargingSpeed * Time.deltaTime;
             }
 
             if (currentCharged >= 100f)
             {
+            //once fully charged, call the shoot function
                 currentCharged = 0;
                 isCharging = false;
                 if (vfx_charging.gameObject.activeSelf)
@@ -205,14 +209,13 @@ public class PlayerControl : MonoBehaviour {
                     vfx_charging.SetActive(false);
                 }
                 Shoot();
-
             }
         }
-
     }
 
     private void Shoot()
     {
+        //plays shooting sfx and fires the bullet in direction the player is aiming
         cannon_charge.Stop();
         cannon_shoot.Play();
         Instantiate(ammoPrefab, firePoint.transform.position, cannon.transform.rotation);
@@ -233,6 +236,7 @@ public class PlayerControl : MonoBehaviour {
         //facing control
         if (axis_x > 0)
         {
+            //turning the character and weapon sprites left and right according to player input
             if (!isFacingRight)
             {
                 isFacingRight = true;
@@ -254,10 +258,12 @@ public class PlayerControl : MonoBehaviour {
         {
             if (isSheathed)
             {
+                //if weapon is sheathed, player moves at "normal" speed which is faster
                 player.transform.position += Vector3.right * axis_x * moveSpeed_nornal * Time.deltaTime;
             }
             else
             {
+                //if weapon is unsheathed, player moves at "armed" speed which is slower
                 player.transform.position += Vector3.right * axis_x * moveSpeed_armed * Time.deltaTime;
             }
         }
@@ -277,9 +283,10 @@ public class PlayerControl : MonoBehaviour {
     {
         if (currentHP <= 0 && isAlive)
         {
+            //once health parameter reaches zero, player character dies
+            //and cannot be controlled
             canControl = false;
             isAlive = false;
         }
-     
     }
 }

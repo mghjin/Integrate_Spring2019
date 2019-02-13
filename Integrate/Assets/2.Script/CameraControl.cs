@@ -1,4 +1,12 @@
-﻿using System.Collections;
+﻿/* 
+ * GSND 6320 PSYCHOLOGY OF PLAY
+ * PROJECT 1 DIGITAL PROTOTYPE
+ * CODERS/EDITORS:
+ * SIDAN FAN
+ * JIN H KIM
+ */
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
