@@ -5292,21 +5292,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3958784405042782119, guid: 8880629ceecdd3e4dae289f5b4d574d4,
-        type: 3}
-      propertyPath: ShapeModule.m_Scale.x
-      value: 11.17309
-      objectReference: {fileID: 0}
-    - target: {fileID: 3958784405042782119, guid: 8880629ceecdd3e4dae289f5b4d574d4,
-        type: 3}
-      propertyPath: EmissionModule.rateOverTime.scalar
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 3958784405042782116, guid: 8880629ceecdd3e4dae289f5b4d574d4,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 11.25
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8880629ceecdd3e4dae289f5b4d574d4, type: 3}
 --- !u!4 &4249657043456813386 stripped

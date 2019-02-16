@@ -23,7 +23,9 @@ public class PlayerControl : MonoBehaviour
         cannon_charge,                  //noise that plays while left mouse click
         cannon_shoot,                   //noise that plays upon weapon shoot (remove left click)
         health_station,                 //noise that plays upon picking up health
-        jump_sfx;                       //noise that plays upon player jumping (pressing space)
+        jump_sfx,                       //noise that plays upon player jumping (pressing space)
+        chaosmode_sfx;                  //noise that plays when player is in chaos mode
+        
 
     #region Player Parameters
     public float moveSpeed_nornal = 5.0f;
@@ -133,7 +135,6 @@ public class PlayerControl : MonoBehaviour
 
     private void ChaosAction()
     {
-
         if (isSheathed)
         {
             isSheathed = false;
@@ -250,6 +251,7 @@ public class PlayerControl : MonoBehaviour
         vfx_error.SetActive(true);
         isChaos = true;
         canControl = false;
+        chaosmode_sfx.Play(); //play sfx and loop for duration of chaos
         coolDownTime = 4 + levelManager.rebelliousLevel * 1.5f;
 
         yield return new WaitForSeconds(coolDownTime);
@@ -257,6 +259,7 @@ public class PlayerControl : MonoBehaviour
         //Leave chaos stage, start cool down timer again
         vfx_charging_ps.startColor = new Color32(191, 219, 255, 184);
         vfx_error.SetActive(false);
+        chaosmode_sfx.Stop();   //stop playing sfx
         StartCoroutine("ChaosMechanicCoolDown");
 
 
