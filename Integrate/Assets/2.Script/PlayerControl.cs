@@ -22,7 +22,6 @@ public class PlayerControl : MonoBehaviour
     public AudioSource cannon_startup,  //noise that plays upon left mouse click
         cannon_charge,                  //noise that plays while left mouse click
         cannon_shoot,                   //noise that plays upon weapon shoot (remove left click)
-        health_station,                 //noise that plays upon picking up health
         jump_sfx,                       //noise that plays upon player jumping (pressing space)
         chaosmode_sfx;                  //noise that plays when player is in chaos mode
         
