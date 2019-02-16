@@ -35,16 +35,19 @@ public class PlayerControl : MonoBehaviour
     #endregion
     #region References
     GameObject player;
-    GameObject cannon;
+    [SerializeField]GameObject cannon;
     GameObject cannonFollowingPosition;
     GameObject firePoint;
     GameObject vfx_charging;
+    ParticleSystem vfx_charging_ps;
+    [SerializeField] GameObject vfx_error;
     Rigidbody rb;
     CapsuleCollider coll;
     public HeroStatusPannelControl heroStatusPanelControl;
     public GameObject[] keyPos;
     Animator animator;
     LevelManager levelManager;
+
 
     #endregion
     #region Status
@@ -87,6 +90,7 @@ public class PlayerControl : MonoBehaviour
         vfx_charging = GameObject.Find("VFX_charging");
         heroStatusPanelControl = GameObject.Find("PlayerStatusPanel").GetComponent<HeroStatusPannelControl>();
         animator = player.GetComponentInChildren<Animator>();
+        vfx_charging_ps = vfx_charging.GetComponent<ParticleSystem>();
 
 
         //initialization
@@ -226,6 +230,7 @@ public class PlayerControl : MonoBehaviour
 
     IEnumerator ChaosMechanicCoolDown()
     {
+        //start timer
         isChaos = false;
         canControl = true;
         isCharging = false;
@@ -236,13 +241,22 @@ public class PlayerControl : MonoBehaviour
             vfx_charging.SetActive(false);
         }
         float coolDownTime;
-        //coolDownTime = 60 - 10 * UnityEngine.Random.Range(1,levelManager.rebelliousLevel);
+        // coolDownTime = 60 - 10 * UnityEngine.Random.Range(1,levelManager.rebelliousLevel);
         coolDownTime = 5f;
         yield return new WaitForSeconds(coolDownTime);
+
+        //becomes chaos
+        vfx_charging_ps.startColor = new Color32(255, 0, 0, 255);
+        vfx_error.SetActive(true);
         isChaos = true;
         canControl = false;
         coolDownTime = 4 + levelManager.rebelliousLevel * 1.5f;
+
         yield return new WaitForSeconds(coolDownTime);
+
+        //Leave chaos stage, start cool down timer again
+        vfx_charging_ps.startColor = new Color32(191, 219, 255, 184);
+        vfx_error.SetActive(false);
         StartCoroutine("ChaosMechanicCoolDown");
 
 

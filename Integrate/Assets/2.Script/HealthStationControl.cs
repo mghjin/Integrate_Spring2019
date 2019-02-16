@@ -37,21 +37,25 @@ public class HealthStationControl : MonoBehaviour {
     {
         if (other.gameObject.tag == "player" && !isTriggered)
         {
-            isTriggered = true;
-            playerControl.currentHP += healingValue;
-            if (playerControl.currentHP > playerControl.maxHP)
+            if (!isTriggered)
             {
-                playerControl.currentHP = playerControl.maxHP;
+                isTriggered = true;
+                playerControl.currentHP += healingValue;
+                if (playerControl.currentHP > playerControl.maxHP)
+                {
+                    playerControl.currentHP = playerControl.maxHP;
+                }
+                healthpack_sfx.Play();
+                playerControl.heroStatusPanelControl.RefreshHPBarDisplay();
+                GameObject temp_vfx = Instantiate(VFX_HealingPrefab, transform.position, Quaternion.identity);
+                Destroy(temp_vfx, 2.0f);
+                VFX_healthStation.SetActive(false);
             }
-            healthpack_sfx.Play();
-            playerControl.heroStatusPanelControl.RefreshHPBarDisplay();
-            GameObject temp_vfx = Instantiate(VFX_HealingPrefab, transform.position, Quaternion.identity);
-            Destroy(temp_vfx, 2.0f);
-            VFX_healthStation.SetActive(false);
+            triggerText.SetActive(true);
+            triggerTextMesh.color = new Color(255, 255, 255, 0);
+            StartCoroutine("DisplayText");
         }
-        triggerText.SetActive(true);
-        triggerTextMesh.color = new Color(255, 255, 255, 0);
-        StartCoroutine("DisplayText");
+
     }
 
     IEnumerator DisplayText()
@@ -61,7 +65,7 @@ public class HealthStationControl : MonoBehaviour {
             triggerTextMesh.color = new Color(triggerTextMesh.color.r, triggerTextMesh.color.g, triggerTextMesh.color.b, triggerTextMesh.color.a + 0.01f);
             yield return new WaitForSeconds(Time.deltaTime);
         }
-        yield return new WaitForSeconds(1.0f);
+        yield return new WaitForSeconds(5.0f);
         while (triggerTextMesh.color.a > 0)
         {
             triggerTextMesh.color = new Color(triggerTextMesh.color.r, triggerTextMesh.color.g, triggerTextMesh.color.b, triggerTextMesh.color.a - 0.01f);
