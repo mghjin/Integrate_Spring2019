@@ -24,11 +24,12 @@ public class LevelManager : MonoBehaviour
     public int rebelliousLevel = 0; // this parameter indicates the times player goes against the order. It won't be initialized on loading.
     public float eliminatingRate = 0f;
     public EnemyControl[] enemies;
-    [SerializeField] int currentSceneBuildIndex;
+    [SerializeField] int currentSceneBuildIndex = 0;
 
 
     void Awake()
     {
+        currentSceneBuildIndex = SceneManager.GetActiveScene().buildIndex;
         GameObject[] objs = GameObject.FindGameObjectsWithTag("LevelManager");
         if (objs.Length > 1)
         {
@@ -71,7 +72,10 @@ public class LevelManager : MonoBehaviour
         {
             rebelliousLevel++;
         }
-        SceneManager.LoadScene(currentSceneBuildIndex + 1);
+        Debug.Log("A:Now the currentSceneBuildIndex is:" + currentSceneBuildIndex);
+        currentSceneBuildIndex++;
+        Debug.Log("B:Now the currentSceneBuildIndex is:" + currentSceneBuildIndex);
+        SceneManager.LoadScene(currentSceneBuildIndex);
     }
 
 }
