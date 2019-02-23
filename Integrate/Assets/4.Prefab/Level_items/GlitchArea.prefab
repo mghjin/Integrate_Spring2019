@@ -4840,7 +4840,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c58722c87a3ab14dab8a88773a5e3af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  glitcharea_sfx: {fileID: 0}
+  glitcharea_sfx: {fileID: 7965921309260110954}
   isHurting: 1
   collDownTime: 0.5
   damagePerTimeUnit: 5
