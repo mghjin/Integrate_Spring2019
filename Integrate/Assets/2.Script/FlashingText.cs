@@ -16,28 +16,20 @@ using UnityEngine.UI;
 
 public class FlashingText : MonoBehaviour
 {
+    /*
+    // "You Died" screen and text objects
+    public GameObject PlayerAlertPanel;
+    public Text PlayerAlertText;
 
-    public Text BossAIVoice;
-    private AudioSource text_sfx;
 
-    /* if we end up using this
-     * the player will collide with a certain game object
-     * in order for the text to trigger
-     * can also play a certain sound effect
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            while (soundPlayed == false)
-            {
-                source.Play();
-                soundPlayed = true;
-            }
-            FoundStrengthVirtue.gameObject.SetActive(true);
+            PlayerAlertPanel.gameObject.SetActive(true);
             Start();
         }
     }
-    */
 
     //
     private void Start()
@@ -50,5 +42,8 @@ public class FlashingText : MonoBehaviour
     void DisableText()
     {
         BossAIVoice.gameObject.SetActive(false);
+        
     }
+
+    */
 }

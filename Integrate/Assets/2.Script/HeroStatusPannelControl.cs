@@ -1,9 +1,12 @@
 ﻿/* 
  * GSND 6320 PSYCHOLOGY OF PLAY
  * PROJECT 1 DIGITAL PROTOTYPE
- * CODERS/EDITORS:
+ * CODERS:
  * SIDAN FAN
  * JIN H KIM
+ * 
+ * EDITORS:
+ * SONYA I MCCREE
  */
 
 using System.Collections;
@@ -12,9 +15,6 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class HeroStatusPannelControl : MonoBehaviour {
-
-
-
     #region References
     [SerializeField] Image HeroHPBar;
     [SerializeField] Image HeroHPBarMaximum;

@@ -14,17 +14,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerControl : MonoBehaviour
 {
-
     // SFX collection that is emitted from player object
     public AudioSource cannon_startup,  //noise that plays upon left mouse click
         cannon_charge,                  //noise that plays while left mouse click
         cannon_shoot,                   //noise that plays upon weapon shoot (remove left click)
         jump_sfx,                       //noise that plays upon player jumping (pressing space)
         chaosmode_sfx;                  //noise that plays when player is in chaos mode
-        
+
+    public GameObject PlayerAlertPanel; // panel with screen-darkening effects, attached to text
+    public Text PlayerAlertText;        //adjustable text that can be invoked to display certain alerts within game
+
+    public int PlayerDeathCount = 0;    // tracks the number of times the player dies
 
     #region Player Parameters
     public float moveSpeed_nornal = 5.0f;
@@ -81,6 +85,9 @@ public class PlayerControl : MonoBehaviour
 
     void Start()
     {
+        // make sure "game over" screen is inactive upon loading into level
+        PlayerAlertPanel.gameObject.SetActive(false);
+
         //find references
         rb = GetComponent<Rigidbody>();
         coll = GetComponent<CapsuleCollider>();
@@ -118,29 +125,29 @@ public class PlayerControl : MonoBehaviour
         //player control
         if (canControl)
         {
-            Move();
-            Aim(); // this deal with the action of cannon
-            ChargeWeapon();
-            Sheathe();
-            Jump();
-
+            Move();     // player movement
+            Aim();      // this deal with the action of cannon
+            ChargeWeapon(); // method charging cannon for set duration
+            Sheathe();      // un/sheathes weapon & sets player as non/hostile
+            Jump();         // detects player position in-air/on-ground and allows jump
         }
 
         if (chaosMechanicEnabled && isChaos)
         {
-            ChaosAction();
+            ChaosAction(); //
         }
+
     }
 
     private void ChaosAction()
     {
-        if (isSheathed)
+        if (isSheathed)     // chaos action written so that it always takes hostile actions
         {
             isSheathed = false;
         }
         AutomaticallyAim();
 
-        if (!isSheathed)
+        if (!isSheathed)    // auto charges cannon
         {
             isCharging = true;
             if (!vfx_charging.gameObject.activeSelf)
@@ -187,7 +194,6 @@ public class PlayerControl : MonoBehaviour
                     automaticallyShootTarget = null;
                 }
             }
-
         }
 
         if (automaticallyShootTarget == null)
@@ -211,7 +217,8 @@ public class PlayerControl : MonoBehaviour
             automaticallyShootTargetEnemyControl = automaticallyShootTarget.GetComponent<EnemyControl>();
         }
 
-        if (!isSheathed)
+        if (!isSheathed) // controls position of the cannon to follow the player at set distance
+                         // controls cannon rotation/aim based on mouse movement input
         {
             cannon.transform.position = new Vector3(Mathf.Lerp(cannon.transform.position.x, player.transform.position.x, 0.1f),
                                            Mathf.Lerp(cannon.transform.position.y, player.transform.position.y + 0.2f, 0.1f),
@@ -222,9 +229,7 @@ public class PlayerControl : MonoBehaviour
             Debug.Log(automaticallyShootTarget.transform.position + Vector3.forward * (-10f));
             cannon.transform.rotation = rotation;
             cannon.transform.eulerAngles = new Vector3(0, 0, cannon.transform.eulerAngles.z);
-
         }
-
     }
 
 
@@ -285,6 +290,7 @@ public class PlayerControl : MonoBehaviour
         }
     }
 
+    // for the jump method
     private bool Groundcheck()
     {
         RaycastHit hit;
@@ -447,6 +453,19 @@ public class PlayerControl : MonoBehaviour
         }
     }
 
+    // if player falls and collides with out-of-bounds Barriers
+    // player dies, reload
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("OutOfBounds"))
+        {
+            ReloadFromDeath();
+        }
+    }
+
+    // checks player's health
+    // if above 0, player is alive
+    // if 0 (or negative), player is dead -> Reload
     public void DeathCheck()
     {
         if (currentHP <= 0 && isAlive)
@@ -455,9 +474,28 @@ public class PlayerControl : MonoBehaviour
             //and cannot be controlled
             canControl = false;
             isAlive = false;
+            ReloadFromDeath();
         }
     }
+
+    //starts coroutine that displays player death alert then reloads player into current scene
+    public void ReloadFromDeath()
+    {
+        PlayerAlertPanel.gameObject.SetActive(true);
+        StartCoroutine(DeathCountdown());
+    }
+
+    IEnumerator DeathCountdown()
+    {
+        yield return new WaitForSeconds(5); // display the YOU DIED screen for 5 seconds before reloading player
+        int scene = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(scene, LoadSceneMode.Single);
+        PlayerDeathCount++;
+    }
 }
+
+
+
 
 
 
