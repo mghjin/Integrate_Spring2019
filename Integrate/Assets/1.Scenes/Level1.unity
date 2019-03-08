@@ -3768,8 +3768,9 @@ PrefabInstance:
     - target: {fileID: 102647567968289024, guid: 159fecfc77953cd49a2de46559e27fe6,
         type: 3}
       propertyPath: m_Text
-      value: "[ARK_memlog001]\r\nIt was 2447. How old was I?\nIt doesn't matter. \nWhat's
-        important are those little things, \nlike Mom and I watching holovids together.\r\n"
+      value: "[Found ARK_memlog001]\r\nIt was 2447. How old was I?\nIt doesn't matter.
+        \nWhat's important are those little things, \nlike Mom and I watching holovids
+        together.\r\n"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 159fecfc77953cd49a2de46559e27fe6, type: 3}

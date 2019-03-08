@@ -6965,6 +6965,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 102647567968289024, guid: 159fecfc77953cd49a2de46559e27fe6,
+        type: 3}
+      propertyPath: m_Text
+      value: "[Found ARK_memlog002]\nWe all laughed it off at first. \nWe thought,
+        'it's just tech. \nPeople are going crazy over nothing.' \nNo one left to
+        laugh, now.\n"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 159fecfc77953cd49a2de46559e27fe6, type: 3}
 --- !u!4 &1592587545 stripped

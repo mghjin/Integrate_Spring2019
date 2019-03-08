@@ -4264,6 +4264,12 @@ PrefabInstance:
       propertyPath: m_OffsetZ
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 102647567968289024, guid: 159fecfc77953cd49a2de46559e27fe6,
+        type: 3}
+      propertyPath: m_Text
+      value: "[Found ARK_memlog003]\nI should have blasted myself off this dry husk
+        of a planet \nas soon as I had the money saved. \nBut I missed my chance."
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 159fecfc77953cd49a2de46559e27fe6, type: 3}
 --- !u!4 &236629289 stripped
@@ -11807,6 +11813,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 13599645, guid: 60cb0318762659e47ad1bb83f9e6e4d9, type: 3}
+      propertyPath: gate_open_sfx
+      value: 
+      objectReference: {fileID: 1281991943}
     - target: {fileID: 2073673767, guid: 60cb0318762659e47ad1bb83f9e6e4d9, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -11816,10 +11826,6 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
-    - target: {fileID: 13599645, guid: 60cb0318762659e47ad1bb83f9e6e4d9, type: 3}
-      propertyPath: gate_open_sfx
-      value: 
-      objectReference: {fileID: 1281991943}
     - target: {fileID: 2073673768, guid: 60cb0318762659e47ad1bb83f9e6e4d9, type: 3}
       propertyPath: Priority
       value: 199
@@ -20303,7 +20309,7 @@ PrefabInstance:
     - target: {fileID: 75741849090010403, guid: 916df5a6d00937b4486452e48dc6feba,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 75741849090010403, guid: 916df5a6d00937b4486452e48dc6feba,
         type: 3}
@@ -22227,8 +22233,9 @@ PrefabInstance:
     - target: {fileID: 102647567968289024, guid: 159fecfc77953cd49a2de46559e27fe6,
         type: 3}
       propertyPath: m_Text
-      value: "[ARK_memlog003]\r\nI should have blasted myself off this dry husk of
-        a planet\nas soon as I had the money saved. \nBut I missed my chance.\r\n"
+      value: "[Found ARK_memlog004]\nBefore ARK I was a scientist. \nThere were a
+        lot of us working on the big Upload at first, \nbut eventually it was just
+        Clark and me."
       objectReference: {fileID: 0}
     - target: {fileID: 102647567968289024, guid: 159fecfc77953cd49a2de46559e27fe6,
         type: 3}
@@ -30502,6 +30509,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 467374298}
     m_Modifications:
+    - target: {fileID: 4471805794826784371, guid: 8376283243a0caa4b9a78bb480511ee9,
+        type: 3}
+      propertyPath: m_Name
+      value: HintLines_2
+      objectReference: {fileID: 0}
     - target: {fileID: 1898743398557528979, guid: 8376283243a0caa4b9a78bb480511ee9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -30556,11 +30568,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4471805794826784371, guid: 8376283243a0caa4b9a78bb480511ee9,
-        type: 3}
-      propertyPath: m_Name
-      value: HintLines_2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8376283243a0caa4b9a78bb480511ee9, type: 3}
@@ -34324,6 +34331,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 467374298}
     m_Modifications:
+    - target: {fileID: 4471805794826784371, guid: 8376283243a0caa4b9a78bb480511ee9,
+        type: 3}
+      propertyPath: m_Name
+      value: HintLines_2
+      objectReference: {fileID: 0}
     - target: {fileID: 1898743398557528979, guid: 8376283243a0caa4b9a78bb480511ee9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -34379,11 +34391,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4471805794826784371, guid: 8376283243a0caa4b9a78bb480511ee9,
-        type: 3}
-      propertyPath: m_Name
-      value: HintLines_2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8376283243a0caa4b9a78bb480511ee9, type: 3}
 --- !u!4 &3598852919340257678 stripped
@@ -34399,6 +34406,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 467374298}
     m_Modifications:
+    - target: {fileID: 8094923251460223282, guid: ac85f32331ac52448818e555a7f95551,
+        type: 3}
+      propertyPath: m_Name
+      value: HintLines_1
+      objectReference: {fileID: 0}
     - target: {fileID: 7090730192895592714, guid: ac85f32331ac52448818e555a7f95551,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -34464,11 +34476,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8094923251460223282, guid: ac85f32331ac52448818e555a7f95551,
-        type: 3}
-      propertyPath: m_Name
-      value: HintLines_1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac85f32331ac52448818e555a7f95551, type: 3}
 --- !u!1001 &3934583581557544835
@@ -34478,6 +34485,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 467374298}
     m_Modifications:
+    - target: {fileID: 7219553772622266317, guid: 1c5133ea003247248a0daa2eecfb3f00,
+        type: 3}
+      propertyPath: m_Name
+      value: HintLines_4
+      objectReference: {fileID: 0}
     - target: {fileID: 7372377309877546895, guid: 1c5133ea003247248a0daa2eecfb3f00,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -34532,11 +34544,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 7219553772622266317, guid: 1c5133ea003247248a0daa2eecfb3f00,
-        type: 3}
-      propertyPath: m_Name
-      value: HintLines_4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c5133ea003247248a0daa2eecfb3f00, type: 3}
