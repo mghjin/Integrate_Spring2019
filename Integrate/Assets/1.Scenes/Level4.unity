@@ -5089,17 +5089,27 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FontData.m_Font
       value: 
-      objectReference: {fileID: 12800000, guid: 29821db8324231f4481e730bf6288b9c,
+      objectReference: {fileID: 12800000, guid: 0547d9267646860428cdb5fdca6eaeb5,
         type: 2}
     - target: {fileID: 75741847324958765, guid: 916df5a6d00937b4486452e48dc6feba,
         type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 75741847324958765, guid: 916df5a6d00937b4486452e48dc6feba,
         type: 3}
       propertyPath: m_FontData.m_MinSize
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 75741847324958762, guid: 916df5a6d00937b4486452e48dc6feba,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 75741847324958762, guid: 916df5a6d00937b4486452e48dc6feba,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7646307338186798303, guid: 916df5a6d00937b4486452e48dc6feba,
         type: 3}
@@ -10083,6 +10093,11 @@ PrefabInstance:
       propertyPath: PlayerAlertText
       value: 
       objectReference: {fileID: 364294100}
+    - target: {fileID: 114624578603077120, guid: d1a457ca96f990f49affcf3c1e281965,
+        type: 3}
+      propertyPath: chaosMechanicEnabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d1a457ca96f990f49affcf3c1e281965, type: 3}
 --- !u!1001 &794520496
