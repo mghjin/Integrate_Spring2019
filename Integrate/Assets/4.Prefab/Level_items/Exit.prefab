@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 4373779979808935760}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 23.77, y: 4.33, z: -0.19350426}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 15, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -62,16 +62,12 @@ MonoBehaviour:
   - 50
   - 100
   levelClearInfo:
-  - 'You just don''t learn, do you?
-
-    Anyway
-
-    The anti-virus app will sanctify you
-
-    It is on the way'
-  - 'Good job, robot
-
-    Good job'
+  - "TASK PROGRESS REPORT FOR ENTITY ELI_007\r\nVirus elimination rate: {0}%\r\nUNSATISFACTORY
+    progress\r\n\nfailure to comply to system directives will result in\n\radditional
+    AI support from entity ELI_BETA\r\n\neliminate all VIRUS entities"
+  - "TASK PROGRESS REPORT FOR ENTITY ELI_007\nVirus elimination rate:{0}%\r\nSATISFACTORY
+    progress\n\nthere are still more VIRUSES in the DATA_CACHE\n\neliminate all VIRUS
+    entities\r\n"
   levelClearPanel: {fileID: 0}
   levelClearText: {fileID: 0}
   killingRate: 0
