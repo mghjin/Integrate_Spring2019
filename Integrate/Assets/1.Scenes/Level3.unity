@@ -4218,6 +4218,28 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 102647567968289024, guid: 159fecfc77953cd49a2de46559e27fe6,
+        type: 3}
+      propertyPath: m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 0547d9267646860428cdb5fdca6eaeb5,
+        type: 2}
+    - target: {fileID: 102647567968289024, guid: 159fecfc77953cd49a2de46559e27fe6,
+        type: 3}
+      propertyPath: m_CharacterSize
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 102647567968289024, guid: 159fecfc77953cd49a2de46559e27fe6,
+        type: 3}
+      propertyPath: m_OffsetZ
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 102647567968289024, guid: 159fecfc77953cd49a2de46559e27fe6,
+        type: 3}
+      propertyPath: m_Text
+      value: "[Found ARK_memlog003]\nI should have blasted myself off this dry husk
+        of a planet \nas soon as I had the money saved. \nBut I missed my chance."
+      objectReference: {fileID: 0}
     - target: {fileID: 4398731329506442, guid: 159fecfc77953cd49a2de46559e27fe6, type: 3}
       propertyPath: m_LocalPosition.y
       value: 2
@@ -4248,28 +4270,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: de111c76e7a674b55813ad15dd70b123, type: 2}
-    - target: {fileID: 102647567968289024, guid: 159fecfc77953cd49a2de46559e27fe6,
-        type: 3}
-      propertyPath: m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 0547d9267646860428cdb5fdca6eaeb5,
-        type: 2}
-    - target: {fileID: 102647567968289024, guid: 159fecfc77953cd49a2de46559e27fe6,
-        type: 3}
-      propertyPath: m_CharacterSize
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 102647567968289024, guid: 159fecfc77953cd49a2de46559e27fe6,
-        type: 3}
-      propertyPath: m_OffsetZ
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 102647567968289024, guid: 159fecfc77953cd49a2de46559e27fe6,
-        type: 3}
-      propertyPath: m_Text
-      value: "[Found ARK_memlog003]\nI should have blasted myself off this dry husk
-        of a planet \nas soon as I had the money saved. \nBut I missed my chance."
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 159fecfc77953cd49a2de46559e27fe6, type: 3}
 --- !u!4 &236629289 stripped
@@ -18798,7 +18798,7 @@ PrefabInstance:
     - target: {fileID: 3140783828716808811, guid: d4152cd35cc3ec146a20025435e96763,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3140783828716808811, guid: d4152cd35cc3ec146a20025435e96763,
         type: 3}
@@ -22227,24 +22227,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4398731329506442, guid: 159fecfc77953cd49a2de46559e27fe6, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1040877845, guid: 159fecfc77953cd49a2de46559e27fe6, type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114572193982068512, guid: 159fecfc77953cd49a2de46559e27fe6,
-        type: 3}
-      propertyPath: healthpack_sfx
-      value: 
-      objectReference: {fileID: 44729239}
-    - target: {fileID: 23326773982995666, guid: 159fecfc77953cd49a2de46559e27fe6,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: de111c76e7a674b55813ad15dd70b123, type: 2}
     - target: {fileID: 102647567968289024, guid: 159fecfc77953cd49a2de46559e27fe6,
         type: 3}
       propertyPath: m_Text
@@ -22263,6 +22245,24 @@ PrefabInstance:
       propertyPath: m_CharacterSize
       value: 0.2
       objectReference: {fileID: 0}
+    - target: {fileID: 4398731329506442, guid: 159fecfc77953cd49a2de46559e27fe6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040877845, guid: 159fecfc77953cd49a2de46559e27fe6, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114572193982068512, guid: 159fecfc77953cd49a2de46559e27fe6,
+        type: 3}
+      propertyPath: healthpack_sfx
+      value: 
+      objectReference: {fileID: 44729239}
+    - target: {fileID: 23326773982995666, guid: 159fecfc77953cd49a2de46559e27fe6,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: de111c76e7a674b55813ad15dd70b123, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 159fecfc77953cd49a2de46559e27fe6, type: 3}
 --- !u!4 &1378499557 stripped
@@ -31072,25 +31072,6 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 1040877845, guid: 159fecfc77953cd49a2de46559e27fe6, type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114572193982068512, guid: 159fecfc77953cd49a2de46559e27fe6,
-        type: 3}
-      propertyPath: healthpack_sfx
-      value: 
-      objectReference: {fileID: 44729239}
-    - target: {fileID: 114572193982068512, guid: 159fecfc77953cd49a2de46559e27fe6,
-        type: 3}
-      propertyPath: triggerTextMesh
-      value: 
-      objectReference: {fileID: 236629290}
-    - target: {fileID: 23326773982995666, guid: 159fecfc77953cd49a2de46559e27fe6,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: de111c76e7a674b55813ad15dd70b123, type: 2}
     - target: {fileID: 102647567968289024, guid: 159fecfc77953cd49a2de46559e27fe6,
         type: 3}
       propertyPath: m_Color.rgba
@@ -31135,6 +31116,25 @@ PrefabInstance:
       propertyPath: m_FontStyle
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1040877845, guid: 159fecfc77953cd49a2de46559e27fe6, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114572193982068512, guid: 159fecfc77953cd49a2de46559e27fe6,
+        type: 3}
+      propertyPath: healthpack_sfx
+      value: 
+      objectReference: {fileID: 44729239}
+    - target: {fileID: 114572193982068512, guid: 159fecfc77953cd49a2de46559e27fe6,
+        type: 3}
+      propertyPath: triggerTextMesh
+      value: 
+      objectReference: {fileID: 236629290}
+    - target: {fileID: 23326773982995666, guid: 159fecfc77953cd49a2de46559e27fe6,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: de111c76e7a674b55813ad15dd70b123, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 159fecfc77953cd49a2de46559e27fe6, type: 3}
 --- !u!4 &1902046667 stripped
