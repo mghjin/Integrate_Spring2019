@@ -23,7 +23,7 @@ public class LevelManager : MonoBehaviour
     public int numberOfEnemiesBeenEliminated = 0;
     public int numberOfEnemies_SummedUp = 0;                      //add numberOfEnemiesInThisScene to this variable to calculate the total number
     public int numberOfEnemiesBeenEliminated_SummedUp = 0;        //add numberOfEnemiesBeenEliminated to this variable to calculate the total number
-    public int rebelliousLevel = 0; // this parameter indicates the times player goes against the order. It won't be initialized on loading.
+    public int rebelliousLevel = 0;                               // this parameter indicates the times player goes against the order. It won't be initialized on loading.
     public float eliminatingRate = 0f;
     public EnemyControl[] enemies;
     [SerializeField] int currentSceneBuildIndex = 0;
@@ -49,6 +49,11 @@ public class LevelManager : MonoBehaviour
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        //initialization
+        numberOfEnemiesInThisScene = 0;
+        numberOfEnemiesBeenEliminated = 0;
+        eliminatingRate = 0f;
+
         //calculating number of enemies
         enemies = FindObjectsOfType<EnemyControl>();
         foreach (EnemyControl ec in enemies)
@@ -56,6 +61,7 @@ public class LevelManager : MonoBehaviour
             numberOfEnemiesInThisScene++;
         }
         Debug.Log(numberOfEnemiesInThisScene);
+
 
 
         //scene management
