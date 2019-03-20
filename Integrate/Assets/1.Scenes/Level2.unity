@@ -10375,6 +10375,11 @@ PrefabInstance:
         progress\n\nthere are still more VIRUSES in the DATA_CACHE\n\neliminate all
         VIRUS entities\r\n"
       objectReference: {fileID: 0}
+    - target: {fileID: 4373779979808935761, guid: 976189e108386a54294316519db05622,
+        type: 3}
+      propertyPath: percentLevels.Array.data[2]
+      value: 110
+      objectReference: {fileID: 0}
     - target: {fileID: 4373779979808935762, guid: 976189e108386a54294316519db05622,
         type: 3}
       propertyPath: m_Size.y

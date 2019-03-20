@@ -4506,7 +4506,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1176976158588064, guid: bc3d60103f95cc743b73e39dca5ae5ec, type: 3}
       propertyPath: m_Name
-      value: Virus_Man (13)
+      value: Virus_Man (13)_Key
       objectReference: {fileID: 0}
     - target: {fileID: 4159852170643760, guid: bc3d60103f95cc743b73e39dca5ae5ec, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5149,27 +5149,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FontData.m_Font
       value: 
-      objectReference: {fileID: 12800000, guid: 0547d9267646860428cdb5fdca6eaeb5,
-        type: 2}
+      objectReference: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     - target: {fileID: 75741847324958765, guid: 916df5a6d00937b4486452e48dc6feba,
         type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 0
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 75741847324958765, guid: 916df5a6d00937b4486452e48dc6feba,
         type: 3}
       propertyPath: m_FontData.m_MinSize
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 75741847324958765, guid: 916df5a6d00937b4486452e48dc6feba,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 75741847324958762, guid: 916df5a6d00937b4486452e48dc6feba,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 75741847324958762, guid: 916df5a6d00937b4486452e48dc6feba,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7646307338186798303, guid: 916df5a6d00937b4486452e48dc6feba,
         type: 3}
@@ -9763,6 +9767,11 @@ PrefabInstance:
         progress\n\nthere are still more VIRUSES in the DATA_CACHE\n\neliminate all
         VIRUS entities\r\n"
       objectReference: {fileID: 0}
+    - target: {fileID: 4373779979808935761, guid: 976189e108386a54294316519db05622,
+        type: 3}
+      propertyPath: percentLevels.Array.data[2]
+      value: 110
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 976189e108386a54294316519db05622, type: 3}
 --- !u!1001 &758521619
@@ -10601,7 +10610,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1176976158588064, guid: 14132a6b504272b43843cc72bf914608, type: 3}
       propertyPath: m_Name
-      value: Virus_Woman (10)
+      value: Virus_Woman_Key
       objectReference: {fileID: 0}
     - target: {fileID: 4159852170643760, guid: 14132a6b504272b43843cc72bf914608, type: 3}
       propertyPath: m_LocalPosition.x
