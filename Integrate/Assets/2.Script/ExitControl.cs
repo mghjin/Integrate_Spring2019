@@ -15,7 +15,7 @@ using UnityEngine.UI;
 public class ExitControl : MonoBehaviour
 {
     public bool isTheFinalLevel = false;
-    LevelManager levelManager;
+    [SerializeField] LevelManager levelManager;
     public float[] percentLevels; //if killing rate <= percentLevels[n], then display levelClearInfo[n]
     [TextArea(15, 20)]
     public string[] levelClearInfo;
@@ -27,7 +27,7 @@ public class ExitControl : MonoBehaviour
 
     private void Start()
     {
-        levelManager = FindObjectOfType<LevelManager>();
+        StartCoroutine("FindLevelManager");
         levelClearText = GameObject.Find("LevelClearInfo").GetComponent<Text>();
         levelClearPanel = GameObject.Find("LevelClearPanel").GetComponent<Image>();
     }
@@ -121,5 +121,12 @@ public class ExitControl : MonoBehaviour
             yield return new WaitForSeconds(Time.deltaTime);
         }
 
+    }
+
+    //fix bug
+    IEnumerator FindLevelManager()
+    {
+        yield return new WaitForSeconds(1f);
+        levelManager = FindObjectOfType<LevelManager>();
     }
 }
