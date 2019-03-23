@@ -58,7 +58,11 @@ public class LevelManager : MonoBehaviour
         enemies = FindObjectsOfType<EnemyControl>();
         foreach (EnemyControl ec in enemies)
         {
-            numberOfEnemiesInThisScene++;
+            if (ec.dontCountWhenCalculatingTotalNumberOfEnemies == false)
+            {
+                numberOfEnemiesInThisScene++;
+            }
+
         }
         Debug.Log(numberOfEnemiesInThisScene);
 

@@ -112,16 +112,15 @@ public class PlayerControl : MonoBehaviour
         vfx_charging.SetActive(false);
 
         //Start Chaos Mechanic
-        if (levelManager.rebelliousLevel >= 1 && chaosMechanicEnabled)
-        {
-            StartCoroutine("ChaosMechanicCoolDown");
-        }
+        //if (levelManager.rebelliousLevel >= 1 && chaosMechanicEnabled)
+        //{
+        //    StartCoroutine("ChaosMechanicCoolDown");
+        //}
 
     }
 
     void Update()
     {
-        //check status
         //player control
         if (canControl)
         {
@@ -132,7 +131,7 @@ public class PlayerControl : MonoBehaviour
             Jump();         // detects player position in-air/on-ground and allows jump
         }
 
-        if (chaosMechanicEnabled && isChaos)
+        if (/*chaosMechanicEnabled &&*/ isChaos)
         {
             ChaosAction(); //
         }
@@ -233,9 +232,25 @@ public class PlayerControl : MonoBehaviour
     }
 
 
-    IEnumerator ChaosMechanicCoolDown()
+    IEnumerator StartChaosMechanic()
     {
-        //start timer
+        //becomes chaos
+        float coolDownTime;
+        vfx_charging_ps.startColor = new Color32(255, 0, 0, 255);
+        vfx_error.SetActive(true);
+        isChaos = true;
+        canControl = false;
+        chaosmode_sfx.Play(); //play sfx and loop for duration of chaos
+
+        yield return null;
+
+    }
+
+    IEnumerator StopChaosMechanic()
+    {
+        vfx_charging_ps.startColor = new Color32(191, 219, 255, 184);
+        vfx_error.SetActive(false);
+        chaosmode_sfx.Stop();   //stop playing sfx
         isChaos = false;
         canControl = true;
         isCharging = false;
@@ -245,26 +260,9 @@ public class PlayerControl : MonoBehaviour
             cannon_charge.Stop();
             vfx_charging.SetActive(false);
         }
-        float coolDownTime;
-        // coolDownTime = 60 - 10 * UnityEngine.Random.Range(1,levelManager.rebelliousLevel);
-        coolDownTime = 5f;
-        yield return new WaitForSeconds(coolDownTime);
 
-        //becomes chaos
-        vfx_charging_ps.startColor = new Color32(255, 0, 0, 255);
-        vfx_error.SetActive(true);
-        isChaos = true;
-        canControl = false;
-        chaosmode_sfx.Play(); //play sfx and loop for duration of chaos
-        coolDownTime = 4 + levelManager.rebelliousLevel * 1.5f;
+        yield return null;
 
-        yield return new WaitForSeconds(coolDownTime);
-
-        //Leave chaos stage, start cool down timer again
-        vfx_charging_ps.startColor = new Color32(191, 219, 255, 184);
-        vfx_error.SetActive(false);
-        chaosmode_sfx.Stop();   //stop playing sfx
-        StartCoroutine("ChaosMechanicCoolDown");
 
 
     }

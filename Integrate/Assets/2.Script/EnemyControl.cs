@@ -15,6 +15,7 @@ public class EnemyControl : MonoBehaviour {
 
 
     #region Parameter
+    public bool dontCountWhenCalculatingTotalNumberOfEnemies = false;
     enum enemyType { Man, Woman, Hero, Child, Flower};
     [SerializeField] enemyType typeOfThis;
     [SerializeField] float maxHP = 100f;
