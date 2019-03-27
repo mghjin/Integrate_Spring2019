@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Networking;
 
 public class PostSurvey : MonoBehaviour
 {
@@ -51,10 +52,20 @@ public class PostSurvey : MonoBehaviour
         form.AddField("entry.614804790", answers[12]);
 
         byte[] rawData = form.data;
-        WWW www = new WWW(base_URL, rawData);
-        yield return www;
+        //WWW www = new WWW(base_URL, rawData);
+        //yield return www;
 
-        Debug.Log("Data sent!");
+        UnityWebRequest www = UnityWebRequest.Post(base_URL, form);
+        yield return www.SendWebRequest(); 
+
+        if (www.isNetworkError || www.isHttpError)
+        {
+            Debug.Log(www.error);
+        }
+        else
+        {
+            Debug.Log("Data sent!");
+        }
 
         Debug.Log(form.data);
         Debug.Log(www);
@@ -69,6 +80,4 @@ public class PostSurvey : MonoBehaviour
         answerScale = a % 10;
         answers[answerNumber] = answerScale.ToString();
     }
-
-
 }
