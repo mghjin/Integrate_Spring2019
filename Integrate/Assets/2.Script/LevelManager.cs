@@ -19,6 +19,8 @@ using UnityEngine.SceneManagement;
 public class LevelManager : MonoBehaviour
 {
 
+    public int[] data_killingRate;
+
     public int numberOfEnemiesInThisScene = 0;
     public int numberOfEnemiesBeenEliminated = 0;
     public int numberOfEnemies_SummedUp = 0;                      //add numberOfEnemiesInThisScene to this variable to calculate the total number
