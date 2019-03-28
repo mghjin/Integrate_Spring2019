@@ -25,9 +25,12 @@ public class HealthStationControl : MonoBehaviour {
     [SerializeField] bool isTriggered = false;
 
     [SerializeField] PlayerControl playerControl;
+    [SerializeField] LevelManager levelManager;
 
     void Start () {
         playerControl = GameObject.Find("Player").GetComponent<PlayerControl>();
+        levelManager = FindObjectOfType<LevelManager>();
+
         triggerText.SetActive(false);
         triggerTextMesh = triggerText.GetComponent<TextMesh>();
 
@@ -39,6 +42,8 @@ public class HealthStationControl : MonoBehaviour {
         {
             if (!isTriggered)
             {
+                levelManager.amountOfTriggeredHealthStation++;                 //dataCollection
+
                 isTriggered = true;
                 playerControl.currentHP += healingValue;
                 if (playerControl.currentHP > playerControl.maxHP)

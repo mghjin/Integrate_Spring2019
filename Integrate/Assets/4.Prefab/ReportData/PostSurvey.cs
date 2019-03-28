@@ -12,14 +12,22 @@ public class PostSurvey : MonoBehaviour
     public string[] answers;
     public int currentSheetIndex = 0;
 
+    DataCollector dataCollector;
+
     private void Start()
     {
+        dataCollector = FindObjectOfType<DataCollector>();
         for (int i = 0; i <= 12; i++)
         {
             questionSheets[i].SetActive(false);
         }
         questionSheets[0].SetActive(true);
         currentSheetIndex = 0;
+
+
+        //get data from dataCollector
+
+
     }
 
     public void DisplayNextSheet()
@@ -38,6 +46,7 @@ public class PostSurvey : MonoBehaviour
     {
 
         WWWForm form = new WWWForm();
+        //answers
         form.AddField("entry.1133445076", answers[1]);
         form.AddField("entry.764647338", answers[2]);
         form.AddField("entry.1315886282", answers[3]);
@@ -51,11 +60,37 @@ public class PostSurvey : MonoBehaviour
         form.AddField("entry.1868458349", answers[11]);
         form.AddField("entry.614804790", answers[12]);
 
-        byte[] rawData = form.data;
-        //WWW www = new WWW(base_URL, rawData);
-        //yield return www;
+        //data
+        form.AddField("entry.286344326", dataCollector.data_AmountOfVirus_Level[0]);
+        form.AddField("entry.1883973640", dataCollector.data_AmountOfVirus_Level[1]);
+        form.AddField("entry.927227775", dataCollector.data_AmountOfVirus_Level[2]);
+        form.AddField("entry.387211805", dataCollector.data_AmountOfVirus_Level[3]);
+        form.AddField("entry.833904805", dataCollector.data_AmountOfVirus_Level[4]);
 
-        UnityWebRequest www = UnityWebRequest.Post(base_URL, form);
+        form.AddField("entry.1409470758", dataCollector.data_AmountOfKilling_Level[0]);
+        form.AddField("entry.638780155", dataCollector.data_AmountOfKilling_Level[1]);
+        form.AddField("entry.929450014", dataCollector.data_AmountOfKilling_Level[2]);
+        form.AddField("entry.1120369409", dataCollector.data_AmountOfKilling_Level[3]);
+        form.AddField("entry.529513921", dataCollector.data_AmountOfKilling_Level[4]);
+
+        form.AddField("entry.1019745512", dataCollector.data_AmountOfTriggeredHealthStation[0]);
+        form.AddField("entry.2099927699", dataCollector.data_AmountOfTriggeredHealthStation[1]);
+        form.AddField("entry.1923076245", dataCollector.data_AmountOfTriggeredHealthStation[2]);
+        form.AddField("entry.1727733272", dataCollector.data_AmountOfTriggeredHealthStation[3]);
+        form.AddField("entry.699606845", dataCollector.data_AmountOfTriggeredHealthStation[4]);
+
+        form.AddField("entry.198557040", dataCollector.data_RebelliousLevel_Level[0]);
+        form.AddField("entry.820824247", dataCollector.data_RebelliousLevel_Level[1]);
+        form.AddField("entry.58726270", dataCollector.data_RebelliousLevel_Level[2]);
+        form.AddField("entry.1375999688", dataCollector.data_RebelliousLevel_Level[3]);
+        form.AddField("entry.1772165519", dataCollector.data_RebelliousLevel_Level[4]);
+
+
+        byte[] rawData = form.data;
+        WWW www = new WWW(base_URL, rawData);
+        yield return www;
+
+        /*UnityWebRequest www = UnityWebRequest.Post(base_URL, form);
         yield return www.SendWebRequest(); 
 
         if (www.isNetworkError || www.isHttpError)
@@ -65,10 +100,8 @@ public class PostSurvey : MonoBehaviour
         else
         {
             Debug.Log("Data sent!");
-        }
+        }*/
 
-        Debug.Log(form.data);
-        Debug.Log(www);
     }
 
     public void SendSelectedAnswerToFormat(int a)

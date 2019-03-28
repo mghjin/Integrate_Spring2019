@@ -121,6 +121,10 @@ public class ExitControl : MonoBehaviour
             yield return new WaitForSeconds(Time.deltaTime);
         }
 
+        yield return new WaitForSeconds(5f);
+
+        levelManager.LoadNextScene();
+
     }
 
     //fix bug

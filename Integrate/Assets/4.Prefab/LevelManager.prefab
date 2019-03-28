@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1443879989928860040}
   - component: {fileID: 1443879989928860043}
+  - component: {fileID: 1443879989733260452}
   m_Layer: 0
   m_Name: LevelManager
   m_TagString: LevelManager
@@ -43,8 +44,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b2040b211cca204287070b9e1ca2793, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  data_killingRate: 
   numberOfEnemiesInThisScene: 0
   numberOfEnemiesBeenEliminated: 0
+  numberOfEnemies_SummedUp: 0
+  numberOfEnemiesBeenEliminated_SummedUp: 0
+  rebelliousLevel: 0
   eliminatingRate: 0
+  amountOfTriggeredHealthStation: 0
   enemies: []
   currentSceneBuildIndex: 0
+  dataCollector: {fileID: 1443879989733260452}
+--- !u!114 &1443879989733260452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1443879989928860042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 201e0b8080365e14c9fec1ed8ca0f809, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data_AmountOfVirus_Level: ffffffffffffffffffffffffffffffffffffffff
+  data_AmountOfKilling_Level: ffffffffffffffffffffffffffffffffffffffff
+  data_AmountOfTriggeredHealthStation: ffffffffffffffffffffffffffffffffffffffff
+  data_RebelliousLevel_Level: ffffffffffffffffffffffffffffffffffffffff

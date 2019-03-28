@@ -64,7 +64,9 @@
     <Compile Include="Assets\2.Script\AmmoControl.cs" />
     <Compile Include="Assets\2.Script\CameraControl.cs" />
     <Compile Include="Assets\2.Script\ChaosTrigger.cs" />
+    <Compile Include="Assets\2.Script\Cheatslmaoooooooooooooooooooooooooooooooooooooo.cs" />
     <Compile Include="Assets\2.Script\DangerousArea.cs" />
+    <Compile Include="Assets\2.Script\DataCollector.cs" />
     <Compile Include="Assets\2.Script\EnemyAmmoControl.cs" />
     <Compile Include="Assets\2.Script\EnemyControl.cs" />
     <Compile Include="Assets\2.Script\ExitControl.cs" />
@@ -76,6 +78,7 @@
     <Compile Include="Assets\2.Script\LevelBoundary.cs" />
     <Compile Include="Assets\2.Script\LevelManager.cs" />
     <Compile Include="Assets\2.Script\PlayerControl.cs" />
+    <Compile Include="Assets\4.Prefab\ReportData\AgreementScene.cs" />
     <Compile Include="Assets\4.Prefab\ReportData\PostSurvey.cs" />
     <Compile Include="Assets\4.Prefab\ReportData\PreSurvey.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />

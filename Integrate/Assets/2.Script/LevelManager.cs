@@ -27,12 +27,16 @@ public class LevelManager : MonoBehaviour
     public int numberOfEnemiesBeenEliminated_SummedUp = 0;        //add numberOfEnemiesBeenEliminated to this variable to calculate the total number
     public int rebelliousLevel = 0;                               // this parameter indicates the times player goes against the order. It won't be initialized on loading.
     public float eliminatingRate = 0f;
+    public int amountOfTriggeredHealthStation = 0;              //for data collecting
     public EnemyControl[] enemies;
     [SerializeField] int currentSceneBuildIndex = 0;
+
+    [SerializeField] DataCollector dataCollector;          //drag for reference
 
 
     void Awake()
     {
+
         currentSceneBuildIndex = SceneManager.GetActiveScene().buildIndex;
         GameObject[] objs = GameObject.FindGameObjectsWithTag("LevelManager");
         if (objs.Length > 1)
@@ -55,6 +59,7 @@ public class LevelManager : MonoBehaviour
         numberOfEnemiesInThisScene = 0;
         numberOfEnemiesBeenEliminated = 0;
         eliminatingRate = 0f;
+        amountOfTriggeredHealthStation = 0;
 
         //calculating number of enemies
         enemies = FindObjectsOfType<EnemyControl>();
@@ -83,8 +88,14 @@ public class LevelManager : MonoBehaviour
 
     public void LoadNextScene()
     {
+        //deal data collecting
+        dataCollector.data_AmountOfKilling_Level[currentSceneBuildIndex - 2] = numberOfEnemiesBeenEliminated;
+        dataCollector.data_AmountOfVirus_Level[currentSceneBuildIndex - 2] = numberOfEnemiesInThisScene;
+        dataCollector.data_RebelliousLevel_Level[currentSceneBuildIndex - 2] = rebelliousLevel;
+        dataCollector.data_AmountOfTriggeredHealthStation[currentSceneBuildIndex - 2] = amountOfTriggeredHealthStation;
 
 
+        //load scene
         if (eliminatingRate < 100)
         {
             rebelliousLevel++;
