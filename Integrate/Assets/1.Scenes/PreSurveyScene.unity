@@ -146,8 +146,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000023452727, y: -769.725}
-  m_SizeDelta: {x: 823.8, y: 1962.3}
+  m_AnchoredPosition: {x: 0.000018154122, y: -87.4}
+  m_SizeDelta: {x: 823.8, y: 597.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &30188697
 MonoBehaviour:
@@ -182,32 +182,18 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'User Agreement
-
-
-    blablablablablablablablablablablablablablablablablablablabla
-
-    blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablabla
-
-    blablablablablablablablablablablablablablablablablablablabla
-
-    blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablabla
-
-    blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablabla
-
-
-
-    blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablabla
-
-    blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablabla
-
-    blablablablablablablablablablablablablablablablablablablabla
-
-
-
-    blablablablablablablablablablablablablablablablablablablabla
-
-    blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablabla'
+  m_Text: "INFORMED CONSENT\r\nNortheastern University; College of Art, Media, and
+    Design\r\n\r\nDesigners/Researchers: Sidan Fan, Jin H. Kim, Sonya I. McCree\r\n\r\nThis
+    game is part of a psychological research study and will collect data from certain
+    aspects of the player\u2019s gameplay. The game will take about 15-30 minutes
+    to complete, and there will be a short survey at the end.\r\n\r\nIt should be
+    noted that this game could cause mild emotional distress and also contains some
+    content with flashing lights. You, the participant, are not required to proceed/complete
+    the game. Should you wish to withdraw from the game at any time, you may do so
+    at no adverse cost.\r\n\r\nIf you wish to proceed with the game, you give your
+    informed consent to us, the game designers and researchers, to use your playthrough
+    data for analysis. Personal details such as name, age, gender, etc. will not be
+    collected.\r\n"
 --- !u!222 &30188698
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1070,8 +1056,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 941647553}
   m_HandleRect: {fileID: 941647552}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.21548691
+  m_Value: 0.99985677
+  m_Size: 0.70746183
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
