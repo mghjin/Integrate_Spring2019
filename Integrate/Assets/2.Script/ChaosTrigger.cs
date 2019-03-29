@@ -19,10 +19,14 @@ public class ChaosTrigger : MonoBehaviour
     void Start()
     {
         playerControl = FindObjectOfType<PlayerControl>();
-        levelManager = FindObjectOfType<LevelManager>();
-
+        StartCoroutine(FindLevelManager());
     }
 
+    IEnumerator FindLevelManager()
+    {
+        yield return new WaitForSeconds(0.5f);
+        levelManager = FindObjectOfType<LevelManager>();
+    }
 
     private void OnTriggerEnter(Collider other)
     {
