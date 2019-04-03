@@ -1637,21 +1637,21 @@ PrefabInstance:
     - target: {fileID: 4373779979808935761, guid: 976189e108386a54294316519db05622,
         type: 3}
       propertyPath: levelClearInfo_FinalLevel
-      value: 'Through all the areas, there were {0} viruses, of which {1} have been
-        eliminated by you.
+      value: 'There was a total of {0} viruses within the sectors, of which {1} have
+        been eliminated.
 
 
         Total eliminating rate: {2}%
 
 
-        Congraduation, robot Eli_007, you have accomplished all the levels. But there
-        is a final task we want you to do -
+        Congratulations, Unit ELI_007, you have progressed through all of the hidden
+        sectors. But we have a final task for you -
 
 
         A post-game survey which will take you 3 minutes.
 
 
-        Thanks.'
+        Thank you for playing!'
       objectReference: {fileID: 0}
     - target: {fileID: 4373779979808935761, guid: 976189e108386a54294316519db05622,
         type: 3}
@@ -19338,10 +19338,6 @@ PrefabInstance:
       propertyPath: gate_open_sfx
       value: 
       objectReference: {fileID: 1281991943}
-    - target: {fileID: 2073673768, guid: 60cb0318762659e47ad1bb83f9e6e4d9, type: 3}
-      propertyPath: Priority
-      value: 199
-      objectReference: {fileID: 0}
     - target: {fileID: 4547964406108802, guid: 60cb0318762659e47ad1bb83f9e6e4d9, type: 3}
       propertyPath: m_LocalScale.y
       value: 2.5
@@ -19353,6 +19349,10 @@ PrefabInstance:
     - target: {fileID: 4547964406108802, guid: 60cb0318762659e47ad1bb83f9e6e4d9, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2073673768, guid: 60cb0318762659e47ad1bb83f9e6e4d9, type: 3}
+      propertyPath: Priority
+      value: 199
       objectReference: {fileID: 0}
     - target: {fileID: 2073673767, guid: 60cb0318762659e47ad1bb83f9e6e4d9, type: 3}
       propertyPath: m_RootOrder
@@ -38390,6 +38390,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FontData.m_BestFit
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 75741847324958765, guid: 916df5a6d00937b4486452e48dc6feba,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 916df5a6d00937b4486452e48dc6feba, type: 3}
