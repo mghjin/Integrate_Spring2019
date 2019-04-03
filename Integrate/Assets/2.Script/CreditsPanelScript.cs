@@ -9,18 +9,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CreditsPanelScript : MonoBehaviour
 {
     public GameObject CreditsPanel;
     bool status = false;
+    public Button CreditsButton;
 
-    private void Update()
+    private void Start()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            status = !status;
-            CreditsPanel.SetActive(status);
-        }
+        CreditsButton.onClick.AddListener(ButtonClick);
+    }
+
+    public void ButtonClick()
+    {
+        status = !status;
+        CreditsPanel.SetActive(status);
     }
 }

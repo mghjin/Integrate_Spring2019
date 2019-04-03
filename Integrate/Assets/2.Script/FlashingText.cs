@@ -13,34 +13,18 @@ using UnityEngine.UI;
 
 public class FlashingText : MonoBehaviour
 {
-    /*
-    // "You Died" screen and text objects
-    public GameObject PlayerAlertPanel;
-    public Text PlayerAlertText;
+    public Text LvTutorialText;
 
-
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.CompareTag("Player"))
-        {
-            PlayerAlertPanel.gameObject.SetActive(true);
-            Start();
-        }
-    }
-
-    //
     private void Start()
     {
+        LvTutorialText.gameObject.SetActive(true);
         //can set the float to any duration
         //text will appear on the screen for that amount of time
-        Invoke("DisableText", 10.5f);
+        Invoke("DisableText", 13f);
     }
 
     void DisableText()
     {
-        BossAIVoice.gameObject.SetActive(false);
-        
+        LvTutorialText.gameObject.SetActive(false);
     }
-
-    */
 }
