@@ -3,10 +3,7 @@
  * PROJECT 1 DIGITAL PROTOTYPE
  * CODERS:
  * SIDAN FAN
- * JIN H KIM
- * 
- * EDITORS:
- * SONYA I MCCREE
+ * JIN H KIM 
  */
 
 using System.Collections;
@@ -36,14 +33,12 @@ public class LevelManager : MonoBehaviour
 
     void Awake()
     {
-
         currentSceneBuildIndex = SceneManager.GetActiveScene().buildIndex;
         GameObject[] objs = GameObject.FindGameObjectsWithTag("LevelManager");
         if (objs.Length > 1)
         {
             Destroy(this.gameObject);
         }
-
         DontDestroyOnLoad(this.gameObject);
     }
 
@@ -80,6 +75,7 @@ public class LevelManager : MonoBehaviour
 
     }
 
+    // for data tracking through levels
     public void calculateDeathOfEnemies()
     {
         numberOfEnemiesBeenEliminated++;

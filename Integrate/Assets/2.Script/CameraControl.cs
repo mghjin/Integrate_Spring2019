@@ -3,10 +3,7 @@
  * PROJECT 1 DIGITAL PROTOTYPE
  * CODERS:
  * SIDAN FAN
- * JIN H KIM
- * 
- * EDITORS:
- * SONYA I MCCREE
+ * JIN H KIM 
  */
 
 using System.Collections;

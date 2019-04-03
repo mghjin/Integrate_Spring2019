@@ -3,10 +3,7 @@
  * PROJECT 1 DIGITAL PROTOTYPE
  * CODERS:
  * SIDAN FAN
- * JIN H KIM
- * 
- * EDITORS:
- * SONYA I MCCREE
+ * JIN H KIM 
  */
 
 using System.Collections;
@@ -35,6 +32,7 @@ public class ExitControl : MonoBehaviour
         levelClearPanel = GameObject.Find("LevelClearPanel").GetComponent<Image>();
     }
 
+    // exit actions activate only upon player entering its range
     private void OnTriggerEnter(Collider other)
     {
 
@@ -58,7 +56,7 @@ public class ExitControl : MonoBehaviour
             }
 
 
-
+            // continues to go through all levels until reaching the final sector
             if (!isTheFinalLevel)
             {
                 StartCoroutine("ProcessLevelClear");
@@ -71,6 +69,7 @@ public class ExitControl : MonoBehaviour
         }
     }
 
+    // shows players stats upon completing each level
     IEnumerator ProcessLevelClear()
     {
         float goalAlpha = 1;
@@ -90,6 +89,7 @@ public class ExitControl : MonoBehaviour
         levelManager.LoadNextScene();
     }
 
+    // shows players all stats per level upon completion of final level
     IEnumerator ProcessLevelClearFinalLevel()
     {
         float goalAlpha = 1;

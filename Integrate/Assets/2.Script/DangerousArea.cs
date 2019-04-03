@@ -3,10 +3,7 @@
  * PROJECT 1 DIGITAL PROTOTYPE
  * CODERS:
  * SIDAN FAN
- * JIN H KIM
- * 
- * EDITORS:
- * SONYA I MCCREE
+ * JIN H KIM 
  */
 
 using System.Collections;
@@ -15,15 +12,12 @@ using UnityEngine;
 
 public class DangerousArea : MonoBehaviour
 {
-
     public AudioSource glitcharea_sfx;  // plays while the player object is colliding with area
 
     public bool isHurting = true;
     public float collDownTime = 0.5f;
     public float damagePerTimeUnit = 5;
     [SerializeField] PlayerControl playerControl;
-
-  
 
     void Start()
     {
@@ -38,12 +32,14 @@ public class DangerousArea : MonoBehaviour
             glitcharea_sfx.Play();
     }
 
+    // once player exits area, stop playing sfx
     private void OnTriggerExit(Collider other)
     {
         if (other.gameObject.tag == "player")
             glitcharea_sfx.Stop();
     }
 
+    // if player is alive and colliding with area, player takes ticks of dmg (adjustable)
     private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.tag == "player")

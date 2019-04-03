@@ -3,10 +3,7 @@
  * PROJECT 1 DIGITAL PROTOTYPE
  * CODERS:
  * SIDAN FAN
- * JIN H KIM
- * 
- * EDITORS:
- * SONYA I MCCREE
+ * JIN H KIM 
  */
 
 using System.Collections;
@@ -15,6 +12,8 @@ using UnityEngine;
 
 public class KeyControl : MonoBehaviour {
 
+    // like player's cannnon,
+    // the keys are floating objects set to follow player location
     public GameObject followPoint;
     [SerializeField] bool isPickedUp = false;
     public bool isInsertedToGate = false;
@@ -28,6 +27,8 @@ public class KeyControl : MonoBehaviour {
         playerControl = player.GetComponent<PlayerControl>();
 	}
 
+    // floating object is picked up upon player collision
+    // will not follow unless actively picked up by player
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.name == "Player" && !isPickedUp && !isInsertedToGate)
@@ -41,6 +42,7 @@ public class KeyControl : MonoBehaviour {
         }
     }
 
+    // update position to follow player
     private void Update()
     {
         if (followPoint != null)

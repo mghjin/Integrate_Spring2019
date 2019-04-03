@@ -3,13 +3,10 @@
  * PROJECT 1 DIGITAL PROTOTYPE
  * CODERS:
  * SIDAN FAN
- * JIN H KIM
- * 
- * EDITORS:
- * SONYA I MCCREE
+ * JIN H KIM 
  */
- 
- using System.Collections;
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -23,6 +20,10 @@ public class LevelBoundary : MonoBehaviour
         playerControl = GameObject.Find("Player").GetComponent<PlayerControl>();
     }
 
+    // boundaries set around each level
+    // ensures that players do not fall endlessly
+    // triggers a death and level restart,
+    // where all level progress must be redone
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "player")

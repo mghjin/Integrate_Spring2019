@@ -3,10 +3,7 @@
  * PROJECT 1 DIGITAL PROTOTYPE
  * CODERS:
  * SIDAN FAN
- * JIN H KIM
- * 
- * EDITORS:
- * SONYA I MCCREE
+ * JIN H KIM 
  */
 
 using System.Collections;
@@ -26,6 +23,7 @@ public class HeroStatusPannelControl : MonoBehaviour {
         playerControl = GameObject.Find("Player").GetComponent<PlayerControl>();
 	}
 	
+    // shows player health status
     public void RefreshHPBarDisplay()
     {
         HeroHPBar.gameObject.transform.localScale = new Vector3(playerControl.currentHP / 100f, 1, 1);

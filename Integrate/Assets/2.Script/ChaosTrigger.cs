@@ -3,13 +3,10 @@
  * PROJECT 1 DIGITAL PROTOTYPE
  * CODERS:
  * SIDAN FAN
- * JIN H KIM
- * 
- * EDITORS:
- * SONYA I MCCREE
+ * JIN H KIM 
  */
- 
- using System.Collections;
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -39,6 +36,9 @@ public class ChaosTrigger : MonoBehaviour
         levelManager = FindObjectOfType<LevelManager>();
     }
 
+    //depending on the player's rebellious level
+    //and the level they are currently in
+    //provide a possibility that the player enters chaos mode
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "player" && !hasBeenTriggered)
@@ -50,7 +50,8 @@ public class ChaosTrigger : MonoBehaviour
             }
         }
     }
-
+    
+    //chaos mechanic triggers and automatically shuts off after a given duration
     IEnumerator StartChaoticBehavior()
     {
         playerControl.StartCoroutine("StartChaosMechanic");

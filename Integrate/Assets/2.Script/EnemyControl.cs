@@ -3,10 +3,7 @@
  * PROJECT 1 DIGITAL PROTOTYPE
  * CODERS:
  * SIDAN FAN
- * JIN H KIM
- * 
- * EDITORS:
- * SONYA I MCCREE
+ * JIN H KIM 
  */
 
 using System;
@@ -68,7 +65,7 @@ public class EnemyControl : MonoBehaviour {
         currentHP = maxHP;
 	}
 	
-
+    // checks for current player status
 	void Update () {
         if (isAlive)
         {
@@ -78,11 +75,10 @@ public class EnemyControl : MonoBehaviour {
                 Move();
                 CoolDown();
             }
-
         }
-
 	}
 
+    // delay between the enemy's projectile attacks
     private void CoolDown()
     {
         if (currentAttackCoolDown >= 0)
@@ -93,10 +89,11 @@ public class EnemyControl : MonoBehaviour {
         {
             canAttack = true;
         }
-
-
     }
 
+    // facing the player object
+    // if has been attacked or hostile-action triggered, attack the player
+    // hostility is triggered when a linked enemy object is attacked/killed by player
     private void FacingCheck()
     {
         if (!isAlert || isAggressive)
@@ -119,6 +116,7 @@ public class EnemyControl : MonoBehaviour {
             }
         }
 
+        // initially not aggressive, simply turns to face the player while so
         if (isAlert && !isAggressive)
         {
             if (transform.position.x > playerControl.gameObject.transform.position.x)
@@ -141,8 +139,7 @@ public class EnemyControl : MonoBehaviour {
 
     }
 
-
-
+    // moves towards player
     private void Move()
     {
         float distanceToPlayer = (transform.position - playerControl.gameObject.transform.position).magnitude;
@@ -163,6 +160,7 @@ public class EnemyControl : MonoBehaviour {
             }
         }
 
+        // if player unsheathes cannon, initial reaction is to run from player
         //Escape from player
         if (distanceToPlayer <= alertRange && isAlert && !isAggressive)
         {
@@ -176,6 +174,7 @@ public class EnemyControl : MonoBehaviour {
             }
         }
 
+        // will chase player is hostility has been triggered
         //Chasing player
         if (distanceToPlayer <= alertRange && distanceToPlayer >= attackRange && isAggressive)
         {
@@ -200,6 +199,8 @@ public class EnemyControl : MonoBehaviour {
         }
     }
 
+    // enemy object can only attack when it has sufficient HP
+    // if not enough HP, the attack will also kill the enemy
     private void Attack()
     {
         canAttack = false;
@@ -215,6 +216,7 @@ public class EnemyControl : MonoBehaviour {
         DeathCheck();
     }
 
+    // if linked enemy dies, trigger hostility in other linked enemy objects
     private void DeathCheck()
     {
         if (currentHP <= 0 && isAlive)
@@ -235,6 +237,7 @@ public class EnemyControl : MonoBehaviour {
         }
     }
 
+    // trigger hostility of linked enemy objects
     private void EvokeAggressivenessOfRelatives()
     {
         foreach (GameObject relative in relatives)

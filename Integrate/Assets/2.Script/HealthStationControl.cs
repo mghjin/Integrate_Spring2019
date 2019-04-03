@@ -3,10 +3,7 @@
  * PROJECT 1 DIGITAL PROTOTYPE
  * CODERS:
  * SIDAN FAN
- * JIN H KIM
- * 
- * EDITORS:
- * SONYA I MCCREE
+ * JIN H KIM 
  */
 
 using System.Collections;
@@ -27,6 +24,7 @@ public class HealthStationControl : MonoBehaviour {
     [SerializeField] PlayerControl playerControl;
     [SerializeField] LevelManager levelManager;
 
+    // set lore text of health stations to false at beginning
     void Start () {
         playerControl = GameObject.Find("Player").GetComponent<PlayerControl>();
         levelManager = FindObjectOfType<LevelManager>();
@@ -36,6 +34,9 @@ public class HealthStationControl : MonoBehaviour {
 
     }
 
+    // if player object collides with health station, 
+    // recover health and display lore text
+    // HEALTH IS ONLY REFILLED ONCE!
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "player" && !isTriggered)
@@ -63,6 +64,7 @@ public class HealthStationControl : MonoBehaviour {
 
     }
 
+    // displays the story text every time player enters collision range
     IEnumerator DisplayText()
     {
         while (triggerTextMesh.color.a < 1)

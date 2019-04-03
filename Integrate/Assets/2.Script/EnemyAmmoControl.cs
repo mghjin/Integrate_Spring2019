@@ -3,10 +3,7 @@
  * PROJECT 1 DIGITAL PROTOTYPE
  * CODERS:
  * SIDAN FAN
- * JIN H KIM
- * 
- * EDITORS:
- * SONYA I MCCREE
+ * JIN H KIM 
  */
 
 using System.Collections;
@@ -20,13 +17,15 @@ public class EnemyAmmoControl : MonoBehaviour {
     public float ammoDamage = 10f;
     public GameObject VFX_sparkPrefab;
 
-
+    // has the enemy objects face the player
 	void Start () {
         rb = GetComponent<Rigidbody>();
         player = GameObject.Find("Player");
         rb.AddForce((player.transform.position - transform.position).normalized * 2, ForceMode.Impulse);
 	}
 
+    // the enemy can become hostile and target the player
+    // enemy dies after a certain number of ammo fired to player
     private void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.name == "Player")

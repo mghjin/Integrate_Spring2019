@@ -3,10 +3,7 @@
  * PROJECT 1 DIGITAL PROTOTYPE
  * CODERS:
  * SIDAN FAN
- * JIN H KIM
- * 
- * EDITORS:
- * SONYA I MCCREE
+ * JIN H KIM 
  */
 
 using System.Collections;
@@ -26,6 +23,7 @@ public class Cheatslmaoooooooooooooooooooooooooooooooooooooo : MonoBehaviour
     }
 
     // Update is called once per frame
+    // with certain key combinations, skip past 
     void Update()
     {
         if ((Input.GetKey(KeyCode.N) && Input.GetKeyDown(KeyCode.U)) || (Input.GetKey(KeyCode.U) && Input.GetKeyDown(KeyCode.N)))
