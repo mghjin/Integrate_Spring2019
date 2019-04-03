@@ -491,7 +491,7 @@ PrefabInstance:
     - target: {fileID: 3140783828716808811, guid: d4152cd35cc3ec146a20025435e96763,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3140783828716808811, guid: d4152cd35cc3ec146a20025435e96763,
         type: 3}
@@ -673,6 +673,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GlitchArea (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
@@ -1588,7 +1593,7 @@ PrefabInstance:
     - target: {fileID: 4373779979808935763, guid: 976189e108386a54294316519db05622,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4373779979808935763, guid: 976189e108386a54294316519db05622,
         type: 3}
@@ -2613,6 +2618,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GlitchArea
+      objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
@@ -5029,6 +5039,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlitchArea (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5180,6 +5195,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GlitchArea (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
@@ -8063,6 +8083,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlitchArea (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8306,6 +8331,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlitchArea
       objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8486,6 +8516,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GlitchArea
+      objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
@@ -9308,6 +9343,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlitchArea (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9831,6 +9871,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlitchArea
       objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10328,6 +10373,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GlitchArea (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
@@ -10855,6 +10905,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlitchArea (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11265,6 +11320,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GlitchArea
+      objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
@@ -12636,7 +12696,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4858775505875736, guid: d1a457ca96f990f49affcf3c1e281965, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4858775505875736, guid: d1a457ca96f990f49affcf3c1e281965, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -12664,6 +12724,14 @@ PrefabInstance:
         type: 3}
       propertyPath: chaosMechanicEnabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 105495896, guid: d1a457ca96f990f49affcf3c1e281965, type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1787938297, guid: d1a457ca96f990f49affcf3c1e281965, type: 3}
+      propertyPath: m_Volume
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 212584468333301234, guid: d1a457ca96f990f49affcf3c1e281965,
         type: 3}
@@ -14054,6 +14122,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlitchArea (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15042,7 +15115,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4984652096943206, guid: 60cb0318762659e47ad1bb83f9e6e4d9, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4984652096943206, guid: 60cb0318762659e47ad1bb83f9e6e4d9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -15766,6 +15839,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GlitchArea
+      objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
@@ -18924,6 +19002,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlitchArea (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -19348,7 +19431,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4984652096943206, guid: 60cb0318762659e47ad1bb83f9e6e4d9, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4984652096943206, guid: 60cb0318762659e47ad1bb83f9e6e4d9, type: 3}
       propertyPath: m_LocalScale.y
@@ -19358,6 +19441,10 @@ PrefabInstance:
       propertyPath: gate_open_sfx
       value: 
       objectReference: {fileID: 1281991943}
+    - target: {fileID: 2073673768, guid: 60cb0318762659e47ad1bb83f9e6e4d9, type: 3}
+      propertyPath: Priority
+      value: 199
+      objectReference: {fileID: 0}
     - target: {fileID: 4547964406108802, guid: 60cb0318762659e47ad1bb83f9e6e4d9, type: 3}
       propertyPath: m_LocalScale.y
       value: 2.5
@@ -19369,10 +19456,6 @@ PrefabInstance:
     - target: {fileID: 4547964406108802, guid: 60cb0318762659e47ad1bb83f9e6e4d9, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2073673768, guid: 60cb0318762659e47ad1bb83f9e6e4d9, type: 3}
-      propertyPath: Priority
-      value: 199
       objectReference: {fileID: 0}
     - target: {fileID: 2073673767, guid: 60cb0318762659e47ad1bb83f9e6e4d9, type: 3}
       propertyPath: m_RootOrder
@@ -21749,6 +21832,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GlitchArea
+      objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
@@ -24464,6 +24552,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GlitchArea (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
@@ -28140,6 +28233,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlitchArea
       objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28543,7 +28641,7 @@ PrefabInstance:
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
@@ -30967,6 +31065,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlitchArea (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -33041,6 +33144,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlitchArea (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -34123,6 +34231,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlitchArea
       objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -34561,6 +34674,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GlitchArea (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
@@ -36531,6 +36649,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlitchArea (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -36615,6 +36738,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GlitchArea
+      objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
@@ -37304,6 +37432,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GlitchArea (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
@@ -38438,6 +38571,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 916df5a6d00937b4486452e48dc6feba, type: 3}
+--- !u!1 &1216141856 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 75741849090010415, guid: 916df5a6d00937b4486452e48dc6feba,
+    type: 3}
+  m_PrefabInstance: {fileID: 1216141855}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1216141857 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3984370994181157438, guid: 916df5a6d00937b4486452e48dc6feba,
@@ -38450,6 +38589,25 @@ MonoBehaviour:
   m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!224 &1216141858 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 75741849090010403, guid: 916df5a6d00937b4486452e48dc6feba,
+    type: 3}
+  m_PrefabInstance: {fileID: 1216141855}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1216141859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1216141856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b423a45724e78c438cee8281736fab6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LvTutorialText: {fileID: 1839395449}
 --- !u!1001 &1216886798
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39316,6 +39474,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GlitchArea (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
@@ -40424,7 +40587,7 @@ PrefabInstance:
     - target: {fileID: 4047867292821692071, guid: 7b3aeda3183bfea49b46969c8afc274e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4047867292821692071, guid: 7b3aeda3183bfea49b46969c8afc274e,
         type: 3}
@@ -41333,6 +41496,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GlitchArea
+      objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
@@ -42378,6 +42546,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GlitchArea (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
@@ -44065,6 +44238,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlitchArea (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -44154,6 +44332,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GlitchArea (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
@@ -45293,6 +45476,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlitchArea (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -45376,6 +45564,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GlitchArea (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
@@ -46123,6 +46316,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GlitchArea (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
@@ -48540,6 +48738,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlitchArea (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -49899,6 +50102,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlitchArea (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -50788,6 +50996,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GlitchArea
+      objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
@@ -53018,6 +53231,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlitchArea
       objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -53351,6 +53569,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GlitchArea (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
@@ -56721,6 +56944,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlitchArea (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -58872,6 +59100,85 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1835463838}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1839395448
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1839395451}
+  - component: {fileID: 1839395450}
+  - component: {fileID: 1839395449}
+  m_Layer: 5
+  m_Name: LvTutorialText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1839395449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1839395448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 0547d9267646860428cdb5fdca6eaeb5, type: 2}
+    m_FontSize: 0
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: "Eliminate dangerous entities. \r\nDo not explore unstable sectors.\n"
+--- !u!222 &1839395450
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1839395448}
+  m_CullTransparentMesh: 0
+--- !u!224 &1839395451
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1839395448}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1216141858}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 325}
+  m_SizeDelta: {x: 250, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1839460124
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -65141,6 +65448,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlitchArea (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -66176,6 +66488,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GlitchArea
+      objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
@@ -67957,6 +68274,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlitchArea (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -68097,6 +68419,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GlitchArea (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
@@ -68346,6 +68673,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GlitchArea (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}

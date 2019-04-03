@@ -123,6 +123,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform1
       objectReference: {fileID: 0}
+    - target: {fileID: 1055399062607970, guid: 88f2f7de577415645a5e2f4df3ffb588, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4011129566587966, guid: 88f2f7de577415645a5e2f4df3ffb588, type: 3}
       propertyPath: m_LocalPosition.x
       value: -554.2486
@@ -734,6 +738,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Virus_Man
       objectReference: {fileID: 0}
+    - target: {fileID: 1176976158588064, guid: bc3d60103f95cc743b73e39dca5ae5ec, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4159852170643760, guid: bc3d60103f95cc743b73e39dca5ae5ec, type: 3}
       propertyPath: m_LocalPosition.x
       value: -554.5596
@@ -1221,6 +1229,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CreditsPanel: {fileID: 1485342885}
+  CreditsButton: {fileID: 310811650}
 --- !u!1 &2020620844
 GameObject:
   m_ObjectHideFlags: 0
