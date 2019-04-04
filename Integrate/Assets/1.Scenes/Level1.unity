@@ -2112,8 +2112,8 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "Initializing system... Welcome to GAIA\r\n\r\nNew software recognized.
     Downloading entity specifications.\n\nTask Deliverables for entity ELI_007\r:\n\rGAIA
-    infrastructure has been compromised. \nEliminate dangerous entities. \r\nDo not
-    explore unstable sectors.\n"
+    infrastructure has been compromised. \nObtain overrides by eliminating dangerous
+    entities. \r\nDo not explore unstable sectors.\n"
 --- !u!222 &758573365
 CanvasRenderer:
   m_ObjectHideFlags: 0

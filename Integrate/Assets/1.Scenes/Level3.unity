@@ -26459,7 +26459,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "Eliminate dangerous entities. \r\nDo not explore unstable sectors.\n"
+  m_Text: "Obtain overrides by eliminating dangerous entities. \r\nDo not explore
+    unstable sectors."
 --- !u!222 &1578578497
 CanvasRenderer:
   m_ObjectHideFlags: 0
