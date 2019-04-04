@@ -374,6 +374,11 @@ PrefabInstance:
       propertyPath: glitcharea_sfx
       value: 
       objectReference: {fileID: 2053764354}
+    - target: {fileID: 3958784405042782117, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: damagePerTimeUnit
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8880629ceecdd3e4dae289f5b4d574d4, type: 3}
 --- !u!82 &13712974 stripped
@@ -7220,6 +7225,11 @@ PrefabInstance:
       propertyPath: glitcharea_sfx
       value: 
       objectReference: {fileID: 612453884}
+    - target: {fileID: 3958784405042782117, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: damagePerTimeUnit
+      value: 1.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8880629ceecdd3e4dae289f5b4d574d4, type: 3}
 --- !u!82 &371011603 stripped
@@ -11522,6 +11532,11 @@ PrefabInstance:
       propertyPath: glitcharea_sfx
       value: 
       objectReference: {fileID: 646753899}
+    - target: {fileID: 3958784405042782117, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: damagePerTimeUnit
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8880629ceecdd3e4dae289f5b4d574d4, type: 3}
 --- !u!4 &612453883 stripped
@@ -11946,6 +11961,11 @@ PrefabInstance:
       propertyPath: glitcharea_sfx
       value: 
       objectReference: {fileID: 612453884}
+    - target: {fileID: 3958784405042782117, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: damagePerTimeUnit
+      value: 1.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8880629ceecdd3e4dae289f5b4d574d4, type: 3}
 --- !u!4 &628940549 stripped
@@ -12508,6 +12528,11 @@ PrefabInstance:
       propertyPath: glitcharea_sfx
       value: 
       objectReference: {fileID: 1352286149}
+    - target: {fileID: 3958784405042782117, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: damagePerTimeUnit
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8880629ceecdd3e4dae289f5b4d574d4, type: 3}
 --- !u!4 &646753898 stripped
@@ -15747,6 +15772,11 @@ PrefabInstance:
       propertyPath: glitcharea_sfx
       value: 
       objectReference: {fileID: 646753899}
+    - target: {fileID: 3958784405042782117, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: damagePerTimeUnit
+      value: 1.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8880629ceecdd3e4dae289f5b4d574d4, type: 3}
 --- !u!4 &867568936 stripped
@@ -17444,6 +17474,11 @@ PrefabInstance:
       propertyPath: glitcharea_sfx
       value: 
       objectReference: {fileID: 1556778029}
+    - target: {fileID: 3958784405042782117, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: damagePerTimeUnit
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8880629ceecdd3e4dae289f5b4d574d4, type: 3}
 --- !u!4 &990423239 stripped
@@ -21056,6 +21091,11 @@ PrefabInstance:
       propertyPath: glitcharea_sfx
       value: 
       objectReference: {fileID: 612453884}
+    - target: {fileID: 3958784405042782117, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: damagePerTimeUnit
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8880629ceecdd3e4dae289f5b4d574d4, type: 3}
 --- !u!4 &1262201356 stripped
@@ -22236,6 +22276,11 @@ PrefabInstance:
       propertyPath: glitcharea_sfx
       value: 
       objectReference: {fileID: 1556778029}
+    - target: {fileID: 3958784405042782117, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: damagePerTimeUnit
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8880629ceecdd3e4dae289f5b4d574d4, type: 3}
 --- !u!4 &1352286148 stripped
@@ -22695,6 +22740,11 @@ PrefabInstance:
       propertyPath: glitcharea_sfx
       value: 
       objectReference: {fileID: 13712974}
+    - target: {fileID: 3958784405042782117, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: damagePerTimeUnit
+      value: 1.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8880629ceecdd3e4dae289f5b4d574d4, type: 3}
 --- !u!1 &1387201137
@@ -25798,6 +25848,11 @@ PrefabInstance:
       propertyPath: glitcharea_sfx
       value: 
       objectReference: {fileID: 1556778029}
+    - target: {fileID: 3958784405042782117, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: damagePerTimeUnit
+      value: 1.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8880629ceecdd3e4dae289f5b4d574d4, type: 3}
 --- !u!1001 &1549377431
@@ -26040,6 +26095,11 @@ PrefabInstance:
       propertyPath: glitcharea_sfx
       value: 
       objectReference: {fileID: 646753899}
+    - target: {fileID: 3958784405042782117, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: damagePerTimeUnit
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8880629ceecdd3e4dae289f5b4d574d4, type: 3}
 --- !u!82 &1556778029 stripped
@@ -27131,6 +27191,11 @@ PrefabInstance:
       propertyPath: glitcharea_sfx
       value: 
       objectReference: {fileID: 990423240}
+    - target: {fileID: 3958784405042782117, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: damagePerTimeUnit
+      value: 1.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8880629ceecdd3e4dae289f5b4d574d4, type: 3}
 --- !u!82 &1604158929 stripped
@@ -27764,6 +27829,11 @@ PrefabInstance:
       propertyPath: glitcharea_sfx
       value: 
       objectReference: {fileID: 1604158929}
+    - target: {fileID: 3958784405042782117, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: damagePerTimeUnit
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8880629ceecdd3e4dae289f5b4d574d4, type: 3}
 --- !u!4 &1650832724 stripped
@@ -33822,6 +33892,11 @@ PrefabInstance:
       propertyPath: glitcharea_sfx
       value: 
       objectReference: {fileID: 371011603}
+    - target: {fileID: 3958784405042782117, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: damagePerTimeUnit
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8880629ceecdd3e4dae289f5b4d574d4, type: 3}
 --- !u!4 &2053764353 stripped
