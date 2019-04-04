@@ -491,7 +491,7 @@ PrefabInstance:
     - target: {fileID: 3140783828716808811, guid: d4152cd35cc3ec146a20025435e96763,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3140783828716808811, guid: d4152cd35cc3ec146a20025435e96763,
         type: 3}
@@ -548,7 +548,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4048291002473310, guid: 8e8e8446bc4a77d4fa4a78ce0e53212c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -33.056652
+      value: -32.78
       objectReference: {fileID: 0}
     - target: {fileID: 4048291002473310, guid: 8e8e8446bc4a77d4fa4a78ce0e53212c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -674,11 +674,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlitchArea (7)
       objectReference: {fileID: 0}
-    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -744,10 +739,15 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782117, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: damagePerTimeUnit
-      value: 1
+      value: 0.05
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8880629ceecdd3e4dae289f5b4d574d4, type: 3}
@@ -1593,7 +1593,7 @@ PrefabInstance:
     - target: {fileID: 4373779979808935763, guid: 976189e108386a54294316519db05622,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4373779979808935763, guid: 976189e108386a54294316519db05622,
         type: 3}
@@ -2619,11 +2619,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlitchArea
       objectReference: {fileID: 0}
-    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2688,6 +2683,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782117, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
@@ -4181,7 +4181,7 @@ Transform:
   - {fileID: 226613130}
   - {fileID: 1182161146}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &119031673
 PrefabInstance:
@@ -5044,11 +5044,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlitchArea (3)
       objectReference: {fileID: 0}
-    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5109,10 +5104,15 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782117, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: damagePerTimeUnit
-      value: 1
+      value: 0.05
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8880629ceecdd3e4dae289f5b4d574d4, type: 3}
@@ -5201,11 +5201,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlitchArea (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5270,6 +5265,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782117, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
@@ -7714,7 +7714,7 @@ Transform:
   - {fileID: 1913655151}
   - {fileID: 91003022}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &219215052
 PrefabInstance:
@@ -8126,11 +8126,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlitchArea (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8196,10 +8191,15 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782117, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: damagePerTimeUnit
-      value: 1
+      value: 0.05
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8880629ceecdd3e4dae289f5b4d574d4, type: 3}
@@ -8374,11 +8374,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlitchArea
       objectReference: {fileID: 0}
-    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8443,6 +8438,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782117, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
@@ -8560,11 +8560,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlitchArea
       objectReference: {fileID: 0}
-    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8630,10 +8625,15 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782117, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: damagePerTimeUnit
-      value: 1
+      value: 0.05
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8880629ceecdd3e4dae289f5b4d574d4, type: 3}
@@ -9386,11 +9386,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlitchArea (8)
       objectReference: {fileID: 0}
-    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9456,10 +9451,15 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782117, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: damagePerTimeUnit
-      value: 1
+      value: 0.05
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8880629ceecdd3e4dae289f5b4d574d4, type: 3}
@@ -9914,11 +9914,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlitchArea
       objectReference: {fileID: 0}
-    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9983,6 +9978,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782117, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
@@ -10417,11 +10417,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlitchArea (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10486,6 +10481,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.7000002
+      objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782117, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
@@ -10953,11 +10953,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlitchArea (11)
       objectReference: {fileID: 0}
-    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11023,10 +11018,15 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782117, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: damagePerTimeUnit
-      value: 1
+      value: 0.05
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8880629ceecdd3e4dae289f5b4d574d4, type: 3}
@@ -11369,11 +11369,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlitchArea
       objectReference: {fileID: 0}
-    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11438,6 +11433,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782117, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
@@ -12744,7 +12744,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4858775505875736, guid: d1a457ca96f990f49affcf3c1e281965, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4858775505875736, guid: d1a457ca96f990f49affcf3c1e281965, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -14189,11 +14189,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlitchArea (4)
       objectReference: {fileID: 0}
-    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14259,10 +14254,15 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782117, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: damagePerTimeUnit
-      value: 1
+      value: 0.05
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8880629ceecdd3e4dae289f5b4d574d4, type: 3}
@@ -14323,7 +14323,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4610244607297510, guid: eebd8cd7ff52edc4ebfe73dce66312bc, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2
+      value: 2.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4610244607297510, guid: eebd8cd7ff52edc4ebfe73dce66312bc, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eebd8cd7ff52edc4ebfe73dce66312bc, type: 3}
@@ -15182,7 +15186,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4984652096943206, guid: 60cb0318762659e47ad1bb83f9e6e4d9, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4984652096943206, guid: 60cb0318762659e47ad1bb83f9e6e4d9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -15390,7 +15394,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4011129566587966, guid: 88f2f7de577415645a5e2f4df3ffb588, type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4011129566587966, guid: 88f2f7de577415645a5e2f4df3ffb588, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -15907,11 +15911,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlitchArea
       objectReference: {fileID: 0}
-    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15976,6 +15975,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782117, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
@@ -17505,6 +17509,63 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1549267104}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &543560278
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1634779944830520, guid: cd93c4f5371f1d24abb73999ec3e2798, type: 3}
+      propertyPath: m_Name
+      value: Platform2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659860193901288, guid: cd93c4f5371f1d24abb73999ec3e2798, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 16.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659860193901288, guid: cd93c4f5371f1d24abb73999ec3e2798, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -67.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659860193901288, guid: cd93c4f5371f1d24abb73999ec3e2798, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.1484375
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659860193901288, guid: cd93c4f5371f1d24abb73999ec3e2798, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659860193901288, guid: cd93c4f5371f1d24abb73999ec3e2798, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659860193901288, guid: cd93c4f5371f1d24abb73999ec3e2798, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659860193901288, guid: cd93c4f5371f1d24abb73999ec3e2798, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659860193901288, guid: cd93c4f5371f1d24abb73999ec3e2798, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659860193901288, guid: cd93c4f5371f1d24abb73999ec3e2798, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659860193901288, guid: cd93c4f5371f1d24abb73999ec3e2798, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659860193901288, guid: cd93c4f5371f1d24abb73999ec3e2798, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cd93c4f5371f1d24abb73999ec3e2798, type: 3}
 --- !u!1001 &547566904
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19069,11 +19130,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlitchArea (13)
       objectReference: {fileID: 0}
-    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -19139,10 +19195,15 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782117, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: damagePerTimeUnit
-      value: 1
+      value: 0.05
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8880629ceecdd3e4dae289f5b4d574d4, type: 3}
@@ -19459,7 +19520,7 @@ Transform:
   - {fileID: 1202234539}
   - {fileID: 459699024}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &629286024
 PrefabInstance:
@@ -19498,7 +19559,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4984652096943206, guid: 60cb0318762659e47ad1bb83f9e6e4d9, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4984652096943206, guid: 60cb0318762659e47ad1bb83f9e6e4d9, type: 3}
       propertyPath: m_LocalScale.y
@@ -19508,10 +19569,6 @@ PrefabInstance:
       propertyPath: gate_open_sfx
       value: 
       objectReference: {fileID: 1281991943}
-    - target: {fileID: 2073673768, guid: 60cb0318762659e47ad1bb83f9e6e4d9, type: 3}
-      propertyPath: Priority
-      value: 199
-      objectReference: {fileID: 0}
     - target: {fileID: 4547964406108802, guid: 60cb0318762659e47ad1bb83f9e6e4d9, type: 3}
       propertyPath: m_LocalScale.y
       value: 2.5
@@ -19523,6 +19580,10 @@ PrefabInstance:
     - target: {fileID: 4547964406108802, guid: 60cb0318762659e47ad1bb83f9e6e4d9, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2073673768, guid: 60cb0318762659e47ad1bb83f9e6e4d9, type: 3}
+      propertyPath: Priority
+      value: 199
       objectReference: {fileID: 0}
     - target: {fileID: 2073673767, guid: 60cb0318762659e47ad1bb83f9e6e4d9, type: 3}
       propertyPath: m_RootOrder
@@ -21900,11 +21961,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlitchArea
       objectReference: {fileID: 0}
-    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -21968,6 +22024,11 @@ PrefabInstance:
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
       value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782117, guid: 8880629ceecdd3e4dae289f5b4d574d4,
@@ -24663,11 +24724,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlitchArea (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -24733,10 +24789,15 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782117, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: damagePerTimeUnit
-      value: 1
+      value: 0.05
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8880629ceecdd3e4dae289f5b4d574d4, type: 3}
@@ -27541,7 +27602,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &844950270
 PrefabInstance:
@@ -28343,11 +28404,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlitchArea
       objectReference: {fileID: 0}
-    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28407,6 +28463,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782117, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
@@ -28751,7 +28812,7 @@ PrefabInstance:
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
@@ -29232,7 +29293,7 @@ Transform:
   - {fileID: 94799727}
   - {fileID: 1790769600}
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &911287611 stripped
 Transform:
@@ -31155,7 +31216,7 @@ Transform:
   - {fileID: 223315460}
   - {fileID: 2035229625}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &996152359 stripped
 Transform:
@@ -31174,11 +31235,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GlitchArea (10)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
@@ -31245,10 +31301,15 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782117, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: damagePerTimeUnit
-      value: 1
+      value: 0.05
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8880629ceecdd3e4dae289f5b4d574d4, type: 3}
@@ -32693,6 +32754,63 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1045998979}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1046796244
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1132724833602292, guid: 8e8e8446bc4a77d4fa4a78ce0e53212c, type: 3}
+      propertyPath: m_Name
+      value: Platform3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048291002473310, guid: 8e8e8446bc4a77d4fa4a78ce0e53212c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 20.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048291002473310, guid: 8e8e8446bc4a77d4fa4a78ce0e53212c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -64.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048291002473310, guid: 8e8e8446bc4a77d4fa4a78ce0e53212c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.1484375
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048291002473310, guid: 8e8e8446bc4a77d4fa4a78ce0e53212c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048291002473310, guid: 8e8e8446bc4a77d4fa4a78ce0e53212c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048291002473310, guid: 8e8e8446bc4a77d4fa4a78ce0e53212c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048291002473310, guid: 8e8e8446bc4a77d4fa4a78ce0e53212c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048291002473310, guid: 8e8e8446bc4a77d4fa4a78ce0e53212c, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048291002473310, guid: 8e8e8446bc4a77d4fa4a78ce0e53212c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048291002473310, guid: 8e8e8446bc4a77d4fa4a78ce0e53212c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048291002473310, guid: 8e8e8446bc4a77d4fa4a78ce0e53212c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8e8e8446bc4a77d4fa4a78ce0e53212c, type: 3}
 --- !u!1001 &1047972555
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33254,11 +33372,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlitchArea (5)
       objectReference: {fileID: 0}
-    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -33324,10 +33437,15 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782117, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: damagePerTimeUnit
-      value: 1
+      value: 0.05
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8880629ceecdd3e4dae289f5b4d574d4, type: 3}
@@ -34341,11 +34459,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlitchArea
       objectReference: {fileID: 0}
-    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -34405,6 +34518,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782117, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
@@ -34785,11 +34903,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlitchArea (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -34853,6 +34966,11 @@ PrefabInstance:
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
       value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782117, guid: 8880629ceecdd3e4dae289f5b4d574d4,
@@ -35567,7 +35685,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4610244607297510, guid: eebd8cd7ff52edc4ebfe73dce66312bc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -39.83665
+      value: -40.11
       objectReference: {fileID: 0}
     - target: {fileID: 4610244607297510, guid: eebd8cd7ff52edc4ebfe73dce66312bc, type: 3}
       propertyPath: m_LocalPosition.z
@@ -35607,7 +35725,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4610244607297510, guid: eebd8cd7ff52edc4ebfe73dce66312bc, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2
+      value: 2.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eebd8cd7ff52edc4ebfe73dce66312bc, type: 3}
@@ -36764,11 +36882,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlitchArea (4)
       objectReference: {fileID: 0}
-    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -36834,6 +36947,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782117, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: damagePerTimeUnit
@@ -36858,11 +36976,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GlitchArea
-      objectReference: {fileID: 0}
-    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
@@ -36928,6 +37041,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782117, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
@@ -37568,11 +37686,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlitchArea (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -37638,6 +37751,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.7
       objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782117, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: damagePerTimeUnit
@@ -37693,7 +37811,7 @@ Transform:
   - {fileID: 1869358983}
   - {fileID: 750666961}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1201485717
 PrefabInstance:
@@ -38567,7 +38685,7 @@ PrefabInstance:
     - target: {fileID: 75741849090010403, guid: 916df5a6d00937b4486452e48dc6feba,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 75741849090010403, guid: 916df5a6d00937b4486452e48dc6feba,
         type: 3}
@@ -39615,11 +39733,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlitchArea (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -39685,10 +39798,15 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782117, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: damagePerTimeUnit
-      value: 1
+      value: 0.05
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8880629ceecdd3e4dae289f5b4d574d4, type: 3}
@@ -40232,7 +40350,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4048291002473310, guid: 8e8e8446bc4a77d4fa4a78ce0e53212c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 49.456562
+      value: 49.09
       objectReference: {fileID: 0}
     - target: {fileID: 4048291002473310, guid: 8e8e8446bc4a77d4fa4a78ce0e53212c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -40744,7 +40862,7 @@ PrefabInstance:
     - target: {fileID: 4047867292821692071, guid: 7b3aeda3183bfea49b46969c8afc274e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4047867292821692071, guid: 7b3aeda3183bfea49b46969c8afc274e,
         type: 3}
@@ -41603,7 +41721,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4011129566587966, guid: 88f2f7de577415645a5e2f4df3ffb588, type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 4011129566587966, guid: 88f2f7de577415645a5e2f4df3ffb588, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -41653,11 +41771,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GlitchArea
-      objectReference: {fileID: 0}
-    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
@@ -41722,6 +41835,11 @@ PrefabInstance:
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
       value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782117, guid: 8880629ceecdd3e4dae289f5b4d574d4,
@@ -42709,11 +42827,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlitchArea (3)
       objectReference: {fileID: 0}
-    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -42777,6 +42890,11 @@ PrefabInstance:
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
       value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782117, guid: 8880629ceecdd3e4dae289f5b4d574d4,
@@ -43102,11 +43220,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4048291002473310, guid: 8e8e8446bc4a77d4fa4a78ce0e53212c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 49.456562
+      value: 49.23
       objectReference: {fileID: 0}
     - target: {fileID: 4048291002473310, guid: 8e8e8446bc4a77d4fa4a78ce0e53212c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -37.366653
+      value: -37.39
       objectReference: {fileID: 0}
     - target: {fileID: 4048291002473310, guid: 8e8e8446bc4a77d4fa4a78ce0e53212c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -44405,11 +44523,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlitchArea (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -44475,6 +44588,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.7
       objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782117, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: damagePerTimeUnit
@@ -44499,11 +44617,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GlitchArea (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
@@ -44569,6 +44682,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782117, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
@@ -44686,7 +44804,7 @@ Transform:
   m_Children:
   - {fileID: 1733148403}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1380908998
 PrefabInstance:
@@ -45648,11 +45766,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlitchArea (14)
       objectReference: {fileID: 0}
-    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -45718,10 +45831,15 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782117, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: damagePerTimeUnit
-      value: 1
+      value: 0.05
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8880629ceecdd3e4dae289f5b4d574d4, type: 3}
@@ -45736,11 +45854,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GlitchArea (12)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
@@ -45807,10 +45920,15 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782117, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: damagePerTimeUnit
-      value: 1
+      value: 0.05
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8880629ceecdd3e4dae289f5b4d574d4, type: 3}
@@ -46489,11 +46607,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlitchArea (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -46558,6 +46671,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.7000002
+      objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782117, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
@@ -48915,11 +49033,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlitchArea (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -48979,6 +49092,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782117, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
@@ -50284,11 +50402,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlitchArea (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -50353,6 +50466,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.50000024
+      objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782117, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
@@ -50447,6 +50565,63 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1576968029}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1578667667
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1132724833602292, guid: 8e8e8446bc4a77d4fa4a78ce0e53212c, type: 3}
+      propertyPath: m_Name
+      value: Platform3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048291002473310, guid: 8e8e8446bc4a77d4fa4a78ce0e53212c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 17.46
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048291002473310, guid: 8e8e8446bc4a77d4fa4a78ce0e53212c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -61.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048291002473310, guid: 8e8e8446bc4a77d4fa4a78ce0e53212c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.1484375
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048291002473310, guid: 8e8e8446bc4a77d4fa4a78ce0e53212c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048291002473310, guid: 8e8e8446bc4a77d4fa4a78ce0e53212c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048291002473310, guid: 8e8e8446bc4a77d4fa4a78ce0e53212c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048291002473310, guid: 8e8e8446bc4a77d4fa4a78ce0e53212c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048291002473310, guid: 8e8e8446bc4a77d4fa4a78ce0e53212c, type: 3}
+      propertyPath: m_RootOrder
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048291002473310, guid: 8e8e8446bc4a77d4fa4a78ce0e53212c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048291002473310, guid: 8e8e8446bc4a77d4fa4a78ce0e53212c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048291002473310, guid: 8e8e8446bc4a77d4fa4a78ce0e53212c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8e8e8446bc4a77d4fa4a78ce0e53212c, type: 3}
 --- !u!1001 &1578909094
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50901,7 +51076,7 @@ PrefabInstance:
     - target: {fileID: 1443879989928860040, guid: 52a4b565b0048bf44be35f1e8302f87a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 1443879989928860040, guid: 52a4b565b0048bf44be35f1e8302f87a,
         type: 3}
@@ -51184,11 +51359,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlitchArea
       objectReference: {fileID: 0}
-    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -51253,6 +51423,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782117, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
@@ -52461,7 +52636,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4659860193901288, guid: cd93c4f5371f1d24abb73999ec3e2798, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4659860193901288, guid: cd93c4f5371f1d24abb73999ec3e2798, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -53423,11 +53598,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlitchArea
       objectReference: {fileID: 0}
-    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -53492,6 +53662,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782117, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
@@ -53762,11 +53937,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlitchArea (5)
       objectReference: {fileID: 0}
-    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -53831,6 +54001,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 2.500001
+      objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782117, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
@@ -54940,6 +55115,63 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1718909279}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1719754776
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1132724833602292, guid: 8e8e8446bc4a77d4fa4a78ce0e53212c, type: 3}
+      propertyPath: m_Name
+      value: Platform3 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048291002473310, guid: 8e8e8446bc4a77d4fa4a78ce0e53212c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 20.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048291002473310, guid: 8e8e8446bc4a77d4fa4a78ce0e53212c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -58.94
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048291002473310, guid: 8e8e8446bc4a77d4fa4a78ce0e53212c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.1484375
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048291002473310, guid: 8e8e8446bc4a77d4fa4a78ce0e53212c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048291002473310, guid: 8e8e8446bc4a77d4fa4a78ce0e53212c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048291002473310, guid: 8e8e8446bc4a77d4fa4a78ce0e53212c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048291002473310, guid: 8e8e8446bc4a77d4fa4a78ce0e53212c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048291002473310, guid: 8e8e8446bc4a77d4fa4a78ce0e53212c, type: 3}
+      propertyPath: m_RootOrder
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048291002473310, guid: 8e8e8446bc4a77d4fa4a78ce0e53212c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048291002473310, guid: 8e8e8446bc4a77d4fa4a78ce0e53212c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048291002473310, guid: 8e8e8446bc4a77d4fa4a78ce0e53212c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8e8e8446bc4a77d4fa4a78ce0e53212c, type: 3}
 --- !u!4 &1720144803 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4533783026341268, guid: bc670c6b51fedfc4d9126b9cc9d21e26,
@@ -57141,11 +57373,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlitchArea (9)
       objectReference: {fileID: 0}
-    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -57211,10 +57438,15 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782117, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: damagePerTimeUnit
-      value: 1
+      value: 0.05
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8880629ceecdd3e4dae289f5b4d574d4, type: 3}
@@ -64571,7 +64803,7 @@ Transform:
   - {fileID: 1522574264}
   - {fileID: 1436122619}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1980599284
 PrefabInstance:
@@ -65646,11 +65878,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlitchArea (3)
       objectReference: {fileID: 0}
-    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -65715,6 +65942,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782117, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
@@ -66692,11 +66924,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlitchArea
       objectReference: {fileID: 0}
-    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -66760,6 +66987,11 @@ PrefabInstance:
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
       value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782117, guid: 8880629ceecdd3e4dae289f5b4d574d4,
@@ -67343,7 +67575,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4048291002473310, guid: 8e8e8446bc4a77d4fa4a78ce0e53212c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 49.456562
+      value: 49.86
       objectReference: {fileID: 0}
     - target: {fileID: 4048291002473310, guid: 8e8e8446bc4a77d4fa4a78ce0e53212c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -68482,11 +68714,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlitchArea (6)
       objectReference: {fileID: 0}
-    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -68552,10 +68779,15 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782117, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: damagePerTimeUnit
-      value: 1
+      value: 0.05
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8880629ceecdd3e4dae289f5b4d574d4, type: 3}
@@ -68572,11 +68804,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4048291002473310, guid: 8e8e8446bc4a77d4fa4a78ce0e53212c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 52.263348
+      value: 49.51
       objectReference: {fileID: 0}
     - target: {fileID: 4048291002473310, guid: 8e8e8446bc4a77d4fa4a78ce0e53212c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -51.08202
+      value: -50.58
       objectReference: {fileID: 0}
     - target: {fileID: 4048291002473310, guid: 8e8e8446bc4a77d4fa4a78ce0e53212c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -68627,11 +68859,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GlitchArea (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
@@ -68698,10 +68925,15 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782117, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: damagePerTimeUnit
-      value: 1
+      value: 0.05
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8880629ceecdd3e4dae289f5b4d574d4, type: 3}
@@ -68882,11 +69114,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlitchArea (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -68950,6 +69177,11 @@ PrefabInstance:
     - target: {fileID: 3958784405042782120, guid: 8880629ceecdd3e4dae289f5b4d574d4,
         type: 3}
       propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7965921309260110954, guid: 8880629ceecdd3e4dae289f5b4d574d4,
+        type: 3}
+      propertyPath: m_Volume
       value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3958784405042782117, guid: 8880629ceecdd3e4dae289f5b4d574d4,
