@@ -1912,7 +1912,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 6. I am very sensitive to what other people think of me
+  m_Text: '6. I am very sensitive to what other people think of me
+
+    1 - Strongly Disagree, 5 - Strongly Agree'
 --- !u!222 &234715501
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2312,7 +2314,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 9. I can understand how people are feeling even before they tell me
+  m_Text: '9. I can understand how people are feeling even before they tell me
+
+    1 - Strongly Disagree, 5 - Strongly Agree'
 --- !u!222 &267085472
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4179,7 +4183,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "12. I can\u2019t be bothered to find out what others think of me."
+  m_Text: "12. I can\u2019t be bothered to find out what others think of me.\n1 -
+    Strongly Disagree, 5 - Strongly Agree"
 --- !u!222 &614528077
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5233,7 +5238,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "7. When someone is feeling \u2018down,\u2019 I can usually understand how
-    they feel."
+    they feel.\n1 - Strongly Disagree, 5 - Strongly Agree"
 --- !u!222 &811244465
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5549,7 +5554,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 10. My actions are governed by the way people expect me to behave
+  m_Text: '10. My actions are governed by the way people expect me to behave
+
+    1 - Strongly Disagree, 5 - Strongly Agree'
 --- !u!222 &829128032
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6486,7 +6493,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 4. It is important that others think well of my decisions
+  m_Text: '4. It is important that others think well of my decisions
+
+    1 - Strongly Disagree, 5 - Strongly Agree'
 --- !u!222 &907905309
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7141,8 +7150,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 2. When I am uncertain how to act in a social situation, I try to do what
+  m_Text: '2. When I am uncertain how to act in a social situation, I try to do what
     others are doing
+
+    1 - Strongly Disagree, 5 - Strongly Agree'
 --- !u!222 &1091914333
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7633,8 +7644,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 8. Before making a decision, I often worry whether others will approve of
-    it.
+  m_Text: '8. Before making a decision, I often worry whether others will approve
+    of it.
+
+    1 - Strongly Disagree, 5 - Strongly Agree'
 --- !u!222 &1186540849
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9053,7 +9066,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "11. My friends\u2019 unhappiness doesn\u2019t make me feel anything"
+  m_Text: "11. My friends\u2019 unhappiness doesn\u2019t make me feel anything\n1
+    - Strongly Disagree, 5 - Strongly Agree"
 --- !u!222 &1354189242
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9132,7 +9146,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "5. I don\u2019t become sad when I see other people crying"
+  m_Text: "5. I don\u2019t become sad when I see other people crying\n1 - Strongly
+    Disagree, 5 - Strongly Agree"
 --- !u!222 &1366321451
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11745,7 +11760,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "1. My friends\u2019 emotions don\u2019t affect me much."
+  m_Text: "1. My friends\u2019 emotions don\u2019t affect me much.\n1 - Strongly Disagree,
+    5 - Strongly Agree"
 --- !u!222 &1744865166
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15127,7 +15143,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "3. I get caught up in other people\u2019s feelings easily"
+  m_Text: "3. I get caught up in other people\u2019s feelings easily\n1 - Strongly
+    Disagree, 5 - Strongly Agree"
 --- !u!222 &2129230096
 CanvasRenderer:
   m_ObjectHideFlags: 0
