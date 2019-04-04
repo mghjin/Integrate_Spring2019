@@ -5855,6 +5855,25 @@ PrefabInstance:
       value: "[ARK_memlog011]\nWe will never be safe, \nnot even when the Upload is
         complete. \nGAIA will find us."
       objectReference: {fileID: 0}
+    - target: {fileID: 102647567968289024, guid: 159fecfc77953cd49a2de46559e27fe6,
+        type: 3}
+      propertyPath: m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 0547d9267646860428cdb5fdca6eaeb5,
+        type: 2}
+    - target: {fileID: 4398731329506442, guid: 159fecfc77953cd49a2de46559e27fe6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398731329506442, guid: 159fecfc77953cd49a2de46559e27fe6, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23326773982995666, guid: 159fecfc77953cd49a2de46559e27fe6,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: de111c76e7a674b55813ad15dd70b123, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 159fecfc77953cd49a2de46559e27fe6, type: 3}
 --- !u!4 &152679685 stripped
@@ -8057,6 +8076,25 @@ PrefabInstance:
       value: "[ARK_memlog013]\nWhat is this all for? \nWhy record our memories if
         \nthere's no one left to share them with?"
       objectReference: {fileID: 0}
+    - target: {fileID: 102647567968289024, guid: 159fecfc77953cd49a2de46559e27fe6,
+        type: 3}
+      propertyPath: m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 0547d9267646860428cdb5fdca6eaeb5,
+        type: 2}
+    - target: {fileID: 4398731329506442, guid: 159fecfc77953cd49a2de46559e27fe6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398731329506442, guid: 159fecfc77953cd49a2de46559e27fe6, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23326773982995666, guid: 159fecfc77953cd49a2de46559e27fe6,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: de111c76e7a674b55813ad15dd70b123, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 159fecfc77953cd49a2de46559e27fe6, type: 3}
 --- !u!4 &226613130 stripped
@@ -13964,6 +14002,25 @@ PrefabInstance:
       propertyPath: m_Text
       value: "[/n.log???U+FFFD\\U_FFF0]\r\n\\n\n\\n we\r\nwe are h??ERE?\r\n"
       objectReference: {fileID: 0}
+    - target: {fileID: 102647567968289024, guid: 159fecfc77953cd49a2de46559e27fe6,
+        type: 3}
+      propertyPath: m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 0547d9267646860428cdb5fdca6eaeb5,
+        type: 2}
+    - target: {fileID: 4398731329506442, guid: 159fecfc77953cd49a2de46559e27fe6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398731329506442, guid: 159fecfc77953cd49a2de46559e27fe6, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23326773982995666, guid: 159fecfc77953cd49a2de46559e27fe6,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: de111c76e7a674b55813ad15dd70b123, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 159fecfc77953cd49a2de46559e27fe6, type: 3}
 --- !u!1001 &403301267
@@ -22042,6 +22099,25 @@ PrefabInstance:
       value: "[/n..log???U+FFFD\\U_FFF0?]\r\n\\n\r ??\n\\neU+FFFDeryone\n\\n we\r\nwe
         are h??ERE? hiddeN\r\n\\n hiddeN deep/\n"
       objectReference: {fileID: 0}
+    - target: {fileID: 102647567968289024, guid: 159fecfc77953cd49a2de46559e27fe6,
+        type: 3}
+      propertyPath: m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 0547d9267646860428cdb5fdca6eaeb5,
+        type: 2}
+    - target: {fileID: 4398731329506442, guid: 159fecfc77953cd49a2de46559e27fe6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398731329506442, guid: 159fecfc77953cd49a2de46559e27fe6, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23326773982995666, guid: 159fecfc77953cd49a2de46559e27fe6,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: de111c76e7a674b55813ad15dd70b123, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 159fecfc77953cd49a2de46559e27fe6, type: 3}
 --- !u!4 &680181541 stripped
@@ -22564,6 +22640,25 @@ PrefabInstance:
       value: "\n[ARK_memlog012]\nGAIA - \nthe Global Adaptive Intelligence Apparatus.
         \nMy life's work. \nIt has turned against us."
       objectReference: {fileID: 0}
+    - target: {fileID: 102647567968289024, guid: 159fecfc77953cd49a2de46559e27fe6,
+        type: 3}
+      propertyPath: m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 0547d9267646860428cdb5fdca6eaeb5,
+        type: 2}
+    - target: {fileID: 4398731329506442, guid: 159fecfc77953cd49a2de46559e27fe6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398731329506442, guid: 159fecfc77953cd49a2de46559e27fe6, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23326773982995666, guid: 159fecfc77953cd49a2de46559e27fe6,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: de111c76e7a674b55813ad15dd70b123, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 159fecfc77953cd49a2de46559e27fe6, type: 3}
 --- !u!1001 &708827164
@@ -37037,12 +37132,27 @@ PrefabInstance:
     - target: {fileID: 102647567968289024, guid: 159fecfc77953cd49a2de46559e27fe6,
         type: 3}
       propertyPath: m_Text
-      value: '[ARK_memlog015]
-
-        We don''t need food or water. Only quiet.
-
-'
+      value: "[ARK_memlog015]\nWe don't need food or water. \nOnly quiet.\n"
       objectReference: {fileID: 0}
+    - target: {fileID: 102647567968289024, guid: 159fecfc77953cd49a2de46559e27fe6,
+        type: 3}
+      propertyPath: m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 0547d9267646860428cdb5fdca6eaeb5,
+        type: 2}
+    - target: {fileID: 4398731329506442, guid: 159fecfc77953cd49a2de46559e27fe6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398731329506442, guid: 159fecfc77953cd49a2de46559e27fe6, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23326773982995666, guid: 159fecfc77953cd49a2de46559e27fe6,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: de111c76e7a674b55813ad15dd70b123, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 159fecfc77953cd49a2de46559e27fe6, type: 3}
 --- !u!4 &1182161146 stripped
@@ -39689,10 +39799,27 @@ PrefabInstance:
     - target: {fileID: 102647567968289024, guid: 159fecfc77953cd49a2de46559e27fe6,
         type: 3}
       propertyPath: m_Text
-      value: '[ARK_memlog010]
-
-        the ARK is eternal. Our bodies weren''t.'
+      value: "[ARK_memlog010]\nthe ARK is eternal. \nOur bodies weren't."
       objectReference: {fileID: 0}
+    - target: {fileID: 102647567968289024, guid: 159fecfc77953cd49a2de46559e27fe6,
+        type: 3}
+      propertyPath: m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 0547d9267646860428cdb5fdca6eaeb5,
+        type: 2}
+    - target: {fileID: 4398731329506442, guid: 159fecfc77953cd49a2de46559e27fe6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398731329506442, guid: 159fecfc77953cd49a2de46559e27fe6, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23326773982995666, guid: 159fecfc77953cd49a2de46559e27fe6,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: de111c76e7a674b55813ad15dd70b123, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 159fecfc77953cd49a2de46559e27fe6, type: 3}
 --- !u!4 &1257851969 stripped

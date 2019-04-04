@@ -7065,6 +7065,25 @@ PrefabInstance:
         'it's just tech. \nPeople are going crazy over nothing.' \nNo one left to
         laugh, now.\n"
       objectReference: {fileID: 0}
+    - target: {fileID: 102647567968289024, guid: 159fecfc77953cd49a2de46559e27fe6,
+        type: 3}
+      propertyPath: m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 0547d9267646860428cdb5fdca6eaeb5,
+        type: 2}
+    - target: {fileID: 4398731329506442, guid: 159fecfc77953cd49a2de46559e27fe6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398731329506442, guid: 159fecfc77953cd49a2de46559e27fe6, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23326773982995666, guid: 159fecfc77953cd49a2de46559e27fe6,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: de111c76e7a674b55813ad15dd70b123, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 159fecfc77953cd49a2de46559e27fe6, type: 3}
 --- !u!4 &1592587545 stripped
