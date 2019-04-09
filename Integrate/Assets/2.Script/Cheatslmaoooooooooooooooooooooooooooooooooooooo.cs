@@ -15,10 +15,10 @@ public class Cheatslmaoooooooooooooooooooooooooooooooooooooo : MonoBehaviour
     PlayerControl playerControl;
     [SerializeField] GameObject keyPrefab;   //drag for reference
 
-    /*
+    
     void Start()
     {
-        playerControl = GetComponent<PlayerControl>();
+        playerControl = FindObjectOfType<PlayerControl>();
         
     }
 
@@ -33,5 +33,5 @@ public class Cheatslmaoooooooooooooooooooooooooooooooooooooo : MonoBehaviour
             Instantiate(keyPrefab, playerControl.gameObject.transform.position + Vector3.right * 4, Quaternion.identity);
         }
     }
-    */
+    
 }

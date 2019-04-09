@@ -65,6 +65,7 @@
     <Compile Include="Assets\2.Script\CameraControl.cs" />
     <Compile Include="Assets\2.Script\ChaosTrigger.cs" />
     <Compile Include="Assets\2.Script\Cheatslmaoooooooooooooooooooooooooooooooooooooo.cs" />
+    <Compile Include="Assets\2.Script\CreditsPanelScript.cs" />
     <Compile Include="Assets\2.Script\DangerousArea.cs" />
     <Compile Include="Assets\2.Script\DataCollector.cs" />
     <Compile Include="Assets\2.Script\EnemyAmmoControl.cs" />
@@ -77,7 +78,9 @@
     <Compile Include="Assets\2.Script\KeyControl.cs" />
     <Compile Include="Assets\2.Script\LevelBoundary.cs" />
     <Compile Include="Assets\2.Script\LevelManager.cs" />
+    <Compile Include="Assets\2.Script\PauseMenu.cs" />
     <Compile Include="Assets\2.Script\PlayerControl.cs" />
+    <Compile Include="Assets\2.Script\SkipButton.cs" />
     <Compile Include="Assets\4.Prefab\ReportData\AgreementScene.cs" />
     <Compile Include="Assets\4.Prefab\ReportData\PostSurvey.cs" />
     <Compile Include="Assets\4.Prefab\ReportData\PreSurvey.cs" />

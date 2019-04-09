@@ -43,7 +43,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 86b990b1f2fc6ae42b89ef572814f4ea, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -5545,7 +5545,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 86b990b1f2fc6ae42b89ef572814f4ea, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -5895,7 +5895,6 @@ GameObject:
   - component: {fileID: 54124206602025588}
   - component: {fileID: 136888854539464546}
   - component: {fileID: 114624578603077120}
-  - component: {fileID: 721309639}
   m_Layer: 0
   m_Name: Player
   m_TagString: player
@@ -6003,19 +6002,6 @@ MonoBehaviour:
   isChaos: 0
   automaticallyShootTarget: {fileID: 0}
   automaticallyShootTargetEnemyControl: {fileID: 0}
---- !u!114 &721309639
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1095595143385986}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7dce440f2ee5d3d4dbe764ab11550d89, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  keyPrefab: {fileID: 1135644563909246, guid: 26a69e65976353c40a0da6eaad56521f, type: 3}
 --- !u!1 &1257193192816866
 GameObject:
   m_ObjectHideFlags: 0

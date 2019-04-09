@@ -108,4 +108,11 @@ public class LevelManager : MonoBehaviour
         numberOfEnemiesBeenEliminated_SummedUp += numberOfEnemiesBeenEliminated;    //add the quantity of eliminated enemies in current level to the sum
     }
 
+    //emergency
+    public void SkipGame()
+    {
+        currentSceneBuildIndex = 7;
+        SceneManager.LoadScene(currentSceneBuildIndex);
+    }
+
 }
