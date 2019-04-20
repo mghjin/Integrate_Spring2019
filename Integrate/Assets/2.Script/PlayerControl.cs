@@ -425,15 +425,28 @@ public class PlayerControl : MonoBehaviour
         //move
         if (canMove)
         {
-            if (isSheathed)
+            int layermask = 1 << 9;
+            if (
+                ((Physics.Raycast(transform.position + Vector3.up, Vector3.right, 0.5f, layermask) || Physics.Raycast(transform.position - Vector3.up * 0.4f, Vector3.right, 0.3f, layermask)) && isFacingRight)
+                ||
+                ((Physics.Raycast(transform.position + Vector3.up, Vector3.left, 0.5f, layermask) || Physics.Raycast(transform.position - Vector3.up * 0.4f, Vector3.left, 0.3f, layermask)) && !isFacingRight)
+                )
             {
-                //if weapon is sheathed, player moves at "normal" speed which is faster
-                player.transform.position += Vector3.right * axis_x * moveSpeed_nornal * Time.deltaTime;
+                
             }
             else
             {
-                //if weapon is unsheathed, player moves at "armed" speed which is slower
-                player.transform.position += Vector3.right * axis_x * moveSpeed_armed * Time.deltaTime;
+                if (isSheathed)
+                {
+                    //if weapon is sheathed, player moves at "normal" speed which is faster
+
+                    player.transform.position += Vector3.right * axis_x * moveSpeed_nornal * Time.deltaTime;
+                }
+                else
+                {
+                    //if weapon is unsheathed, player moves at "armed" speed which is slower
+                    player.transform.position += Vector3.right * axis_x * moveSpeed_armed * Time.deltaTime;
+                }
             }
         }
     }
